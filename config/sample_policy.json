@@ -1,0 +1,43 @@
+{
+  "version": "SAMPLE-LOAN-POLICY-1.0",
+  "authority": "INTERNAL_SAMPLE_POLICY",
+  "numerical_rules": [
+    {
+      "rule_id": "SYN-ESC-001",
+      "metric_id": "CALC-004",
+      "comparator": "LT",
+      "threshold": "1.25",
+      "unit": "RATIO"
+    },
+    {
+      "rule_id": "SYN-ESC-002",
+      "metric_id": "CALC-005",
+      "comparator": "GT",
+      "threshold": "4",
+      "unit": "RATIO"
+    },
+    {
+      "rule_id": "SYN-ESC-004",
+      "metric_id": "CALC-006",
+      "comparator": "GT",
+      "threshold": "80",
+      "unit": "PERCENT"
+    }
+  ],
+  "max_term_months": 60,
+  "amount_review_usd": "10000000",
+  "confidence_review_below": "0.7",
+  "evidence_rules": [
+    "SYN-ESC-006",
+    "SYN-ESC-007",
+    "SYN-ESC-008"
+  ],
+  "synthetic_control_rules": [
+    "SYN-ESC-009",
+    "SYN-ESC-010"
+  ],
+  "retired_rule_ids": [
+    "SYN-ESC-003"
+  ],
+  "no_automatic_reject": true
+}

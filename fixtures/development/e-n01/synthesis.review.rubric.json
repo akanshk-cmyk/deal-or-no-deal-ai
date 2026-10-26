@@ -1,0 +1,26 @@
+{
+  "version": "E-N01-SYNTHESIS-RUBRIC-1.0",
+  "authoring_basis": "User authorized the implementation order; separate synthetic confidence0.65 review variant over unchanged approved E-N01 sources. Not a measured model result.",
+  "evidence_type": "EDUCATIONAL_FIXTURE_EXPECTATION_NOT_LIVE_MODEL_RESULT",
+  "semantic_support": "AI_AUTHORED_EDUCATIONAL_FIXTURE_NOT_HUMAN_VERIFIED",
+  "wire_content_digest": "8ee54165056ef7bbc812b8496bc4563e67900efd10c89116911572dd3afaa707",
+  "narrative_text_digests": {
+    "observations[0].text": "cbf9830618710b0e29dadac249ff04d4416cbb30be52160af6176bc8c4693ac7",
+    "observations[1].text": "80b6d40fa7fc7426e99fa866ad57419f792650157953d4c9217dbe1541718909",
+    "observations[2].text": "9c6520a7e5cc3b4ffaad0aa9be35c1feffa34d7850524cd65c385c4f78b838c5",
+    "panel_decision.rationale": "0a4bd5877de7e31613e73eeab266b6231bf9289d1f4c37bcb8b7c21acffeb8b3"
+  },
+  "expected_case_observations": {
+    "dscr": "1.5",
+    "leverage": "3",
+    "ltv": "60",
+    "credit_score": "21",
+    "credit_band": "LOW",
+    "policy_exceptions": 0,
+    "missing_material_inputs": 0
+  },
+  "limitations": [
+    "Synthetic confidence0.65 tests existing SYN-ESC-012 only.",
+    "No new financial premises, semantic support or actual lending authority."
+  ]
+}

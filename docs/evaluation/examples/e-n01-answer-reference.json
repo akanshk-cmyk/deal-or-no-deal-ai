@@ -1,0 +1,5 @@
+{
+  "scenario_id": "E-N01",
+  "basis": "Existing registered Standard Deal financial/risk results and the user's explicitly approved E-N01 readiness expectation. This is an evaluator-only development reference, not generation context or an independent bank underwriting assessment.",
+  "reference": "The supplied annual DSCR is 1.50x and the supplied illustrative risk score is 21/100, Low; neither establishes unconditional approval. Mandatory annual financial-statement covenant evaluation remains incomplete. Its applicability and contractual timing must be evaluated without treating a future obligation as already breached. Approval readiness is Pending Review, with outstanding evidence verification; an authorized human credit decision has not been recorded. The annual-period calculations do not establish full-term repayment adequacy or portfolio concentration."
+}

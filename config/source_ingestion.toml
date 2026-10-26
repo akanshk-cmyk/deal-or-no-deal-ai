@@ -1,0 +1,33 @@
+# LOCAL-REFERENCE-1.0: trusted declaration, never proof of uploaded-file origin.
+profile_version = "LOCAL-REFERENCE-1.0"
+mode = "LOCAL_FILE"
+corpus_id = "CAMPBELL-AGREEMENT-2024-REFERENCE"
+declared_company = "Campbell Soup Company"
+declared_document_type = "LOAN_AGREEMENT"
+declared_agreement_date = "2024-04-16"
+declared_source_url = "https://www.sec.gov/Archives/edgar/data/16732/000119312524097732/d806817dex10.htm"
+max_file_bytes = 10485760
+max_pdf_pages = 250
+crawler_enabled = false
+
+[embedding]
+profile_version = "NEBIUS-EMBEDDING-1.1"
+provider = "NEBIUS"
+enabled = false
+model_id = "Qwen/Qwen3-Embedding-8B"
+# Catalog metadata only: no request contract or paid execution is verified.
+capability_status = "CATALOG_ONLY_NOT_RUNTIME_VERIFIED"
+dimensions = 4096
+input_usd_per_million_tokens = "0.01"
+output_usd_per_million_tokens = "0"
+pricing_checked_on = "2026-10-23"
+# Deployed revision/tokenizer/full-input limits still require verified setup.
+artifact_revision = "UNCONFIGURED"
+token_count_strategy = "UNCONFIGURED"
+budget_status = "NOT_APPROVED"
+download_on_import = false
+
+[storage]
+backend = "SQLITE_EXACT_COSINE"
+index_enabled = false
+max_children = 500

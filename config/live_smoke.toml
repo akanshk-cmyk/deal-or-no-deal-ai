@@ -1,0 +1,34 @@
+# Explicit user approval; shared across generation, embedding and offline evaluation.
+version = "LIVE-SMOKE-1.0"
+allowance_id = "first-synthetic-010"
+total_allowance_usd = "0.10"
+approval_basis = "User explicitly authorized up to USD0.10 total; stop before exceeding it."
+generation_model = "Qwen/Qwen3-30B-A3B-Instruct-2507"
+embedding_model = "Qwen/Qwen3-Embedding-8B"
+# This is not activated by an API key. Actual schema/rates/full-input fit are pending.
+provider_contract_verified = true
+
+# User-approved allocation; does not verify or activate the provider.
+prompt_profile = "LIVE-COMPACT-1.0"
+extraction_input_cap = 4000
+extraction_output_cap = 1000
+synthesis_input_cap = 2500
+synthesis_output_cap = 650
+aggregate_input_cap = 8000
+aggregate_output_cap = 2000
+correction_input_reserve = 1500
+correction_output_reserve = 350
+token_count_strategy = "PROVIDER_VERIFIED_WHOLE_REQUEST"
+input_usd_per_million = "0.1"
+output_usd_per_million = "0.3"
+rates_verified_on = "2026-10-25T06:52:42.691308+00:00"
+[verified_packet_tokens]
+"921389393522ad68846ecc79f0e032a735b5e9ed4855d33588ea375cf14e7b76" = 2082
+"640e101763b49fcdb0359f2f605934d1e90a502b322d98b73b0ee1ac999f8c73" = 2094
+"17d3225b3149629208f666c49da2104224137c4a3b9c7e3e65f952cafe7898fe" = 2161
+"2fbffc7005480a96947138e73b9dbcef50a012a6c6037b8e5864c98786e18dc0" = 2161
+"f703ae083e81c134037785dbdc7096f8b8f555bf6659c474cb2b67d9cf28baf4" = 1707
+"0e0764cc6a301a7d147c8dac86d9d11310ac7e8dbbcd8837600301bd05be2280" = 1797
+"6cc1e784ffd703ad198e8b25a622cb7dbad38f55c80ab6df39d6bd74297749e6" = 1861
+"4191a53979bf30ee95443ad8150c40477f8264bf29ffbf6401019f2325f70245" = 1874
+"066c2969ae5d51c8ecc9e9cde0a9db28b814cb036be57f3dbb5b3155d53715fa" = 1478

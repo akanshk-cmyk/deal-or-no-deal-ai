@@ -1,0 +1,24 @@
+{
+  "evidence_type": "EVALUATOR_ONLY_AUTHORING_EXPECTATION",
+  "scenario_id": "E-N01",
+  "status": "DRAFT_NOT_REGISTERED",
+  "metrics": {
+    "CALC-001": {"value": "900000", "display": "900000.00", "unit": "USD"},
+    "CALC-002": {"value": "1100000", "display": "1100000.00", "unit": "USD"},
+    "CALC-003": {"value": "3300000", "display": "3300000.00", "unit": "USD"},
+    "CALC-004": {"value": "1.5", "display": "1.50", "unit": "RATIO"},
+    "CALC-005": {"value": "3", "display": "3.00", "unit": "RATIO"},
+    "CALC-006": {"value": "60", "display": "60.00", "unit": "PERCENT"},
+    "CALC-007": {"value": "10", "display": "10.00", "unit": "PERCENT"},
+    "CALC-008": {"value": "2", "display": "2.00", "unit": "RATIO"},
+    "CALC-009": {"value": "9", "display": "9.00", "unit": "RATIO"}
+  },
+  "proposed_assessment_arithmetic_only": {
+    "contributions": ["6", "5", "4", "3", "3"],
+    "total": "21",
+    "band_if_ratings_approved": "LOW",
+    "runtime_score_available": false
+  },
+  "panel_decision": null,
+  "limitations": ["Not model-quality evidence", "Not a registered Fixture run", "Not a human-reviewed assessment"]
+}

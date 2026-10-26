@@ -1,0 +1,24 @@
+DEAL OR NO DEAL AI - EDUCATIONAL SOURCE
+AUTHORING DRAFT - FICTIONAL - NOT AUDITED FINANCIAL STATEMENTS
+
+Example Equipment LLC | E-N01-FACILITY | FINANCIALS-1 v1 | Page 1 of 2
+Prepared: 2026-10-22. USD whole units; not thousands or millions.
+Standalone borrower scope; no parent, guarantor or unrelated facility.
+2026 and 2027 columns below are supplied annual projections, not actuals.
+Calendar years: 01 January through 31 December of each named year.
+
+ANNUAL PROJECTION                     2026              2027
+Revenue                            4000000           4400000
+Net income                         Not supplied       700000
+Interest expense                   Not supplied       100000
+Income-tax expense                 Not supplied       100000
+Depreciation                       Not supplied       100000
+Amortization                       Not supplied       100000
+
+No discretionary EBITDA addbacks are supplied or permitted.
+Revenue growth compares these two author-supplied annual projections;
+it is projected growth, not a measured historical business outcome.
+
+Cash available for debt service, annual principal and interest, and the
+required scope qualification continue on FINANCIALS-1 page 2.
+Neither revenue nor EBITDA substitutes for documented cash available.

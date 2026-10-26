@@ -1,0 +1,13 @@
+{
+  "version": "E-N01-SYNTHESIS-1.0",
+  "scenario_id": "E-F03",
+  "variant": "review",
+  "mode": "FIXTURE",
+  "case_dependency_digest": "e6722ba5c64832c428da32be30bf07bf8f1bd99cf7454d86d1e912e758face32",
+  "package_digest": "6bd7736085283a86664cb4cb1880fe91c6de6cb25265e78f04d47fa94b5937d7",
+  "input_digest": "f79227c6e1aba30ed7b7de01bdd7374879b97a10ece758c588421f2ba21eef9c",
+  "wire_sha256": "3c15cc2453d0d342aa49eba0d594fcbd94d27213206793c93f225e7d5894a054",
+  "rubric_sha256": "b313e8ac770125684e9deada5918310c1b65ef0194d141baa986938e5a4cc7d8",
+  "authoring_basis": "User approved the fictional source premises and requested RiskManager handling then supported E-F03 Reject integration.",
+  "semantic_support": "AI_AUTHORED_EDUCATIONAL_FIXTURE_NOT_HUMAN_VERIFIED"
+}

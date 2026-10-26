@@ -1,0 +1,75 @@
+{
+  "version": "CASE-REG-1.0",
+  "scenario_id": "E-F03",
+  "approval_basis": "User approved synthetic authoring and explicitly instructed implementing the E-F03 workflow.",
+  "approved_assumption_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "approved_at_utc": "2026-10-25T01:21:37.173881+00:00",
+  "evidence_cutoff_at": "2026-10-25T01:21:37.173881+00:00",
+  "review_as_of": "2026-10-23",
+  "purpose": "CURRENT_REVIEW",
+  "source_profile_version": "E-F03-SOURCEFIT-1.0",
+  "deal_id": "37ff33a6-3fbd-5728-9a53-4adad5442273",
+  "subject_id": "7a8b8e92-c86e-5d97-8678-63bf17caf936",
+  "facility_id": "c6eab4ea-810a-5a56-91d9-b7759d8255bf",
+  "input_revision": 1,
+  "manifest_sha256": "792db1e7f15af67bbe1d61173e7e385682608b1195f0038d8a50f8884703413c",
+  "case_sha256": "852eff9fe286b663133d022a6f973ceaf4f38ac556aa3dc19bb1a561aa86b02b",
+  "case_semantic_digest": "554a14976f8cc2034229042737099f8bf8eb8d95c7bdf27d60a0531702c2bdc7",
+  "extraction_sha256": "f702d28b1a3d8d619a08eb4a47c2b50737bfaed10a9761a885d65923b62c2065",
+  "extraction_semantic_digest": "e10df91fdbfa57cbb2f15d32b74c4e3d8a12c24e78ffb23b6e626c92075341f6",
+  "policy_sha256": "de0c4625e9f84de2bce52ab2d69e5bde3b23be8678ddeca48a1f67df70f19c61",
+  "package_digest": "6bd7736085283a86664cb4cb1880fe91c6de6cb25265e78f04d47fa94b5937d7",
+  "parser_version": "6.21.2",
+  "expected_pages": {
+    "E-F03:AGREEMENT-P1": {
+      "source_id": "E-F03-AGREEMENT-1",
+      "source_version": "CORE-SOURCE-1.0",
+      "source_sha256": "7fe6c4eb8834c5ebcecf9df6dc851607f06db8e4ab604a160a29f8d8b2fb3aaf",
+      "page": 1,
+      "text_sha256": "d538b2d4333681aefc262823672f2707fb7ffbea279587dc45ad93bd0a31b317"
+    },
+    "E-F03:FIN-P1": {
+      "source_id": "E-F03-FINANCIALS-1",
+      "source_version": "CORE-SOURCE-1.0",
+      "source_sha256": "b873ad8661698b35fb05dc8d9d422371e7aa87a45b85c2563106cbb604b49078",
+      "page": 1,
+      "text_sha256": "0e02b3991717fc623ad523e4c6d2e3eab19e1bf767329df3c15d1add24a83ea0"
+    },
+    "E-F03:FIN-P2": {
+      "source_id": "E-F03-FINANCIALS-1",
+      "source_version": "CORE-SOURCE-1.0",
+      "source_sha256": "b873ad8661698b35fb05dc8d9d422371e7aa87a45b85c2563106cbb604b49078",
+      "page": 2,
+      "text_sha256": "d6311475fcbe3f8e3d98d7b3c78e2f17a947716e46cbcdfeaca833c5204cb812"
+    },
+    "E-F03:COLLATERAL-P1": {
+      "source_id": "E-F03-COLLATERAL-1",
+      "source_version": "CORE-SOURCE-1.0",
+      "source_sha256": "a63e19e6d2c3e7442de58594939f4625aa915c193e8e9c9f9aa28dbc1d4082aa",
+      "page": 1,
+      "text_sha256": "f27f562646953cd2c4c910526e1f537c22055fd896608c5074d9d4e03a127334"
+    },
+    "E-F03:ASSESSMENT-P2": {
+      "source_id": "E-F03-COLLATERAL-1",
+      "source_version": "CORE-SOURCE-1.0",
+      "source_sha256": "a63e19e6d2c3e7442de58594939f4625aa915c193e8e9c9f9aa28dbc1d4082aa",
+      "page": 2,
+      "text_sha256": "c3f60086613797502e8eb3992663c70ccbb5f5b9e7eef02910476b6a967768c8"
+    }
+  },
+  "instruction_hashes": {
+    "extractor": "82c6658fb5f2658e600c63ef2a0459aec3fde6acc3adcbe98dc79d363a3983b1",
+    "synthesizer": "3df6dca2dd24debad0b0744dec81f6693c0fb62ff74843bbfad19fd93ecdf90d"
+  },
+  "mode": "FIXTURE",
+  "variant": "default",
+  "limitations": [
+    "Synthetic supported-Reject example, not a universal rejection rule",
+    "Separate RiskManager handling and AuthorizedApprover required"
+  ]
+}

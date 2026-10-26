@@ -1,0 +1,30 @@
+{
+  "wire_version": "SYN-WIRE-1.0",
+  "panel_decision": {
+    "decision": "Approve",
+    "confidence": 0.85,
+    "rationale": "Supported annual repayment metrics and the supplied Low assessment support this simulated recommendation; contractual covenants remain unevaluated.",
+    "conditions": [],
+    "escalate_to_human": false
+  },
+  "observations": [
+    {
+      "panel": "FINANCIAL",
+      "text": "Annual DSCR is 1.50x; this does not assess full-term repayment.",
+      "refs": ["calc:DSCR"]
+    },
+    {
+      "panel": "COMPLIANCE",
+      "text": "Applicable sample checks passed; this is not legal clearance or covenant compliance.",
+      "refs": ["panel:COMPLIANCE"]
+    },
+    {
+      "panel": "RISK",
+      "text": "The complete authored assessment is Low, not a default probability.",
+      "refs": ["panel:RISK"]
+    }
+  ],
+  "rationale_refs": ["calc:DSCR", "panel:COMPLIANCE", "panel:RISK"],
+  "condition_links": [],
+  "proposed_action": null
+}

@@ -1,0 +1,13 @@
+{
+  "version": "E-N01-SYNTHESIS-1.0",
+  "scenario_id": "E-P01",
+  "variant": "review",
+  "mode": "FIXTURE",
+  "case_dependency_digest": "fc8605913eae5ea2eb1b8e4222a17b73b4efd47eac28de021a00539c0afe9f85",
+  "package_digest": "4eb10dac6b661ecc00c6c3e61bdf01764d05819ccf18938cdef51c2df71bbc3f",
+  "input_digest": "b25a1992ff1f9ba9a6e358872a83ebaf1e56e9d140268b802111454e23001022",
+  "wire_sha256": "1d4352ac3072c434f4c124765da605184594bcb4fd74e2a626cf2cbe4f0b2485",
+  "rubric_sha256": "04f4285d55bf896546a5edc983d92377c0671974e890c98d88e7f3155f3760fb",
+  "authoring_basis": "User authorized the separate source-backed E-P01 educational review workflow.",
+  "semantic_support": "AI_AUTHORED_EDUCATIONAL_FIXTURE_NOT_HUMAN_VERIFIED"
+}

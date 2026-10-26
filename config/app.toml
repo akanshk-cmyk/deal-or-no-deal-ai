@@ -1,0 +1,20 @@
+schema_version = "CONTRACT-1.0"
+state_codec_version = "STATE-CODEC-1.0"
+input_profile = "INPUT-EDU-1.0"
+# New review execution: FIXTURE uses saved examples; LIVE explicitly uses Nebius.
+# Changing this value never changes historical reviews or starts a request.
+mode = "LIVE"
+tracing_enabled = false
+automatic_expiry = false
+database_path = "var/deal_review.sqlite3"
+live_verification_policy = "DEMO_DRAFT"
+
+[limits]
+input_tokens = 8000
+output_tokens = 2000
+attempts = 5
+nodes = 20
+tools = 12
+active_ms = 180000
+operation_ms = 45000
+cost_usd = "0.25"

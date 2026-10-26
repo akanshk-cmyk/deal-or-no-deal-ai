@@ -1,0 +1,19 @@
+DEAL OR NO DEAL AI - EDUCATIONAL SOURCE
+AUTHORING DRAFT - FICTIONAL - NOT A REAL APPRAISAL OR LIEN SEARCH
+
+Example Equipment LLC | E-P01-FACILITY | E-P01-COLLATERAL-1 v1 | Page 1 of 2
+Prepared: 2026-10-22. Valuation basis: proposed transaction 2026-10-23.
+Currency: USD whole units. Equipment collateral only; no real estate.
+
+Eligible equipment pool value:                         2000000
+Proposed facility exposure secured by this pool:        1200000
+Documented prior-ranking liens on this pool:                  0
+
+The 2000000 combines existing and proposed eligible equipment under this
+fictional case's stated basis; do not treat it as new-purchase cost alone.
+The explicit zero is an authored scenario fact, not a default for missing
+lien data. No haircut, lien search, valuation verification or legal opinion
+has been performed. These statements require review before case registration.
+
+Scope: The same Example Equipment LLC and E-P01-FACILITY as the loan and
+financial schedules. Values are synthetic inputs for FIN-1.0 only.

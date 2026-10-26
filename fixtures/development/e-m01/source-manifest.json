@@ -1,0 +1,117 @@
+{
+  "version": "CORE-SOURCE-AUTHORING-1.0",
+  "scenario_id": "E-M01",
+  "approval_basis": "User explicitly approved core-case-authoring-proposal synthetic assessments and cash bridge in this session.",
+  "status": "PARSED_SOURCE_CANDIDATE_NOT_RUNTIME_REGISTERED",
+  "registered": false,
+  "source_review": "AUTHOR_SELF_CHECK_NOT_INDEPENDENT_SME_REVIEW",
+  "sources": [
+    {
+      "source_id": "E-M01-AGREEMENT-1",
+      "filename": "agreement.pdf",
+      "sha256": "bf43311bd1f7669291c23ac588aa31ebc929fc09d9b27beca5987173808786b1",
+      "pages": 1
+    },
+    {
+      "source_id": "E-M01-FINANCIALS-1",
+      "filename": "financials.pdf",
+      "sha256": "6189eee0121b5e3295f45cb4400f927e46ee36e333bf9b0d53fcebe8e33016cc",
+      "pages": 2
+    },
+    {
+      "source_id": "E-M01-COLLATERAL-1",
+      "filename": "collateral-and-assessments.pdf",
+      "sha256": "bbbdc4b24188e02829be205a1f37a4396c04095e538159550ac7c7ff5047f9b0",
+      "pages": 2
+    }
+  ],
+  "pages": {
+    "E-M01:AGREEMENT-P1": {
+      "source_id": "E-M01-AGREEMENT-1",
+      "page": 1,
+      "parsed_text_sha256": "b5a9be6f19f461b3c65883185b42f59e24e625ab69db11b259a19e524477e74b",
+      "source_sha256": "bf43311bd1f7669291c23ac588aa31ebc929fc09d9b27beca5987173808786b1"
+    },
+    "E-M01:FIN-P1": {
+      "source_id": "E-M01-FINANCIALS-1",
+      "page": 1,
+      "parsed_text_sha256": "2bbba5950800aff8778c543187a63f70577d18ed9ed02b3af430185f4f2f76d4",
+      "source_sha256": "6189eee0121b5e3295f45cb4400f927e46ee36e333bf9b0d53fcebe8e33016cc"
+    },
+    "E-M01:FIN-P2": {
+      "source_id": "E-M01-FINANCIALS-1",
+      "page": 2,
+      "parsed_text_sha256": "7ed131abbb06aae27716c6e6e205af703a3141ec03530a7f8297ee35e6777bab",
+      "source_sha256": "6189eee0121b5e3295f45cb4400f927e46ee36e333bf9b0d53fcebe8e33016cc"
+    },
+    "E-M01:COLLATERAL-P1": {
+      "source_id": "E-M01-COLLATERAL-1",
+      "page": 1,
+      "parsed_text_sha256": "efe9d8920b876c8d8a449290374e49a31fdb10ff1dcdf36019746113f7a2d6f1",
+      "source_sha256": "bbbdc4b24188e02829be205a1f37a4396c04095e538159550ac7c7ff5047f9b0"
+    },
+    "E-M01:ASSESSMENT-P2": {
+      "source_id": "E-M01-COLLATERAL-1",
+      "page": 2,
+      "parsed_text_sha256": "2a44ef4177c28b8506c807d11c17e7d14b051381aa41f363033d0a7bbdbcebbb",
+      "source_sha256": "bbbdc4b24188e02829be205a1f37a4396c04095e538159550ac7c7ff5047f9b0"
+    }
+  },
+  "financial_results": {
+    "CALC-001": {
+      "value": "900000",
+      "display": "900000.00",
+      "validity": "VALID"
+    },
+    "CALC-002": {
+      "value": "1100000",
+      "display": "1100000.00",
+      "validity": "VALID"
+    },
+    "CALC-003": {
+      "value": "3300000",
+      "display": "3300000.00",
+      "validity": "VALID"
+    },
+    "CALC-004": {
+      "value": null,
+      "display": null,
+      "validity": "UNKNOWN"
+    },
+    "CALC-005": {
+      "value": "3",
+      "display": "3.00",
+      "validity": "VALID"
+    },
+    "CALC-006": {
+      "value": "60",
+      "display": "60.00",
+      "validity": "VALID"
+    },
+    "CALC-007": {
+      "value": "10",
+      "display": "10.00",
+      "validity": "VALID"
+    },
+    "CALC-008": {
+      "value": "2",
+      "display": "2.00",
+      "validity": "VALID"
+    },
+    "CALC-009": {
+      "value": "9",
+      "display": "9.00",
+      "validity": "VALID"
+    }
+  },
+  "approved_factor_ratings": null,
+  "expected_score": null,
+  "panel_decision": null,
+  "runtime_status": "PENDING_CASE_REGISTRATION_REVIEW_GATES_AND_SYNTHESIS_RUBRIC",
+  "limitations": [
+    "Not a graph run or model-quality result",
+    "No complete score for missing CFADS",
+    "Threshold breach is not a general Reject rule"
+  ],
+  "source_package_digest": "ae80deef2862f7ad3005c6e91aec4f57b56a6738afb1ca51c027a66218fa1243"
+}

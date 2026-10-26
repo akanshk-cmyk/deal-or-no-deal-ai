@@ -1,0 +1,987 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Deal or No Deal AI — offline snapshot</title><style>body{margin:0;font:16px/1.6 system-ui;background:#f4f7fb;color:#10233f}aside{background:#10233f;color:white;padding:24px;width:230px;position:fixed;height:100vh}main{margin-left:280px;padding:32px;max-width:1050px}button,select{font:inherit;min-height:44px;padding:8px 14px;margin:5px;border:1px solid #52647c;border-radius:8px}aside button{display:block;width:100%;text-align:left;background:#eef4fa;color:#10233f}button:focus-visible,select:focus-visible{outline:3px solid #087e8b}.card{background:white;border:1px solid #dbe3ee;border-radius:12px;padding:22px;margin:18px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.6 system-ui}.notice{background:#eaf4f7;padding:12px;border-left:4px solid #087e8b}section[hidden]{display:none}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:10px;border-bottom:1px solid #dbe3ee}@media(max-width:760px){aside{position:static;width:auto;height:auto}main{margin:0;padding:16px}}</style><aside><h2>Deal or No Deal AI</h2><p>AI credit intelligence</p><button data-page="0">Deal Dashboard</button><button data-page="1">New Deal</button><button data-page="2">Review Workspace</button><button data-page="3">Agent Activity</button><button data-page="4">Credit Memo</button><button data-page="5">Decision History</button><p>Educational offline snapshot</p></aside><main><p class="notice">Recorded synthetic fixture data · Offline snapshot · No actions, model calls or live updates</p><div class="card"><strong>Example Equipment LLC · USD 1,200,000</strong><p>Run 700a2944-849d-5f0b-b311-d99a5d44e19d</p><p>Execution: COMPLETED · Human decision: Not recorded</p></div><section id="page-0"><h1 tabindex="-1">Deal Dashboard</h1><p>1 recorded deal(s) · 2 recorded run(s).</p><button data-page="2">Open review workspace</button></section><section id="page-1" hidden><h1 tabindex="-1">New Deal</h1><div class="card"><h3>Registered sample package</h3><p>E-N01 · Five registered source pages.</p><button disabled>Start review — use the local Streamlit application</button><p>This snapshot does not upload documents or execute the graph.</p></div></section><section id="page-2" hidden><h1 tabindex="-1">Review Workspace</h1><div class="card"><h3>Extracted terms</h3><table><tr><th scope="row">Borrower</th><td>Example Equipment LLC</td></tr><tr><th scope="row">Legal Entity</th><td>Example Equipment LLC</td></tr><tr><th scope="row">Facility Type</th><td>TERM_LOAN</td></tr><tr><th scope="row">Requested Amount</th><td>1200000</td></tr><tr><th scope="row">Currency</th><td>USD</td></tr><tr><th scope="row">Term Months</th><td>48</td></tr><tr><th scope="row">Maturity Date</th><td>2030-10-23</td></tr><tr><th scope="row">Interest Terms</th><td>{&#x27;kind&#x27;: &#x27;FIXED&#x27;, &#x27;annual_rate_percent&#x27;: &#x27;6&#x27;, &#x27;index&#x27;: None, &#x27;spread_bps&#x27;: None, &#x27;reset_frequency&#x27;: None, &#x27;floor_percent&#x27;: None}</td></tr><tr><th scope="row">Repayment Structure</th><td>Principal and interest per supplied annual forecast schedule; full-term adequacy not assessed</td></tr><tr><th scope="row">Collateral</th><td>[&#x27;First-ranking charge over COLLATERAL-1 equipment pool&#x27;]</td></tr><tr><th scope="row">Guarantees</th><td>[]</td></tr><tr><th scope="row">Covenants</th><td>[&#x27;Supply annual financial statements&#x27;]</td></tr><tr><th scope="row">Use Of Proceeds</th><td>USD 900000 equipment purchase and USD 300000 repayment of existing funded debt</td></tr></table></div><label for="source">Supporting evidence</label><select id="source"><option value="AGREEMENT-P1">AGREEMENT-P1</option><option value="FIN-P1">FIN-P1</option><option value="FIN-P2">FIN-P2</option><option value="COLLATERAL-P1">COLLATERAL-P1</option><option value="ASSESSMENT-P2">ASSESSMENT-P2</option><option value="calc:CALC-001">calc:CALC-001</option><option value="calc:CALC-002">calc:CALC-002</option><option value="calc:CALC-003">calc:CALC-003</option><option value="calc:DSCR">calc:DSCR</option><option value="calc:CALC-005">calc:CALC-005</option><option value="calc:CALC-006">calc:CALC-006</option><option value="calc:CALC-007">calc:CALC-007</option><option value="calc:CALC-008">calc:CALC-008</option><option value="calc:CALC-009">calc:CALC-009</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-001">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-001</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-002">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-002</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-004">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-004</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-005">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-005</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-006">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-006</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-007">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-007</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-008">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-008</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-009">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-009</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-010">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-010</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-011">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-011</option><option value="policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-012">policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-012</option><option value="assessment:E-N01:repayment_capacity">assessment:E-N01:repayment_capacity</option><option value="assessment:E-N01:financial_leverage">assessment:E-N01:financial_leverage</option><option value="assessment:E-N01:collateral_quality">assessment:E-N01:collateral_quality</option><option value="assessment:E-N01:borrower_credit_profile">assessment:E-N01:borrower_credit_profile</option><option value="assessment:E-N01:business_industry_risk">assessment:E-N01:business_industry_risk</option><option value="panel:FINANCIAL">panel:FINANCIAL</option><option value="panel:COMPLIANCE">panel:COMPLIANCE</option><option value="panel:RISK">panel:RISK</option></select><pre id="evidence" class="card"></pre></section><section id="page-3" hidden><h1 tabindex="-1">Agent Activity</h1><pre class="card">[
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 1,
+    &quot;stage&quot;: &quot;pdf_input&quot;
+  },
+  {
+    &quot;active_ms&quot;: 31,
+    &quot;artifact_digest&quot;: &quot;eaafd470323257624fca6b57453be6a26d57ad1535586e921c4226edb251b2d2&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 2,
+    &quot;stage&quot;: &quot;pdf_input&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 3,
+    &quot;stage&quot;: &quot;extractor&quot;
+  },
+  {
+    &quot;active_ms&quot;: 1,
+    &quot;artifact_digest&quot;: &quot;4a2297e677f1339666bf0a7a3924da6e2de476dc83b6405220d3c66a9c0cedd3&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 4,
+    &quot;stage&quot;: &quot;extractor&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 5,
+    &quot;stage&quot;: &quot;financial_analyst&quot;
+  },
+  {
+    &quot;active_ms&quot;: 7,
+    &quot;artifact_digest&quot;: &quot;03bfa07505bbe0f35d3f03ab090f041c79ebc004b031645e5c958f7ca53c55cc&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 6,
+    &quot;stage&quot;: &quot;financial_analyst&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 7,
+    &quot;stage&quot;: &quot;compliance_check&quot;
+  },
+  {
+    &quot;active_ms&quot;: 6,
+    &quot;artifact_digest&quot;: &quot;864fb00fb64bb1f55194ded3ddac5e74e7196f7ab524b66045ce7b77f3c2de05&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 8,
+    &quot;stage&quot;: &quot;compliance_check&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 9,
+    &quot;stage&quot;: &quot;risk_quantifier&quot;
+  },
+  {
+    &quot;active_ms&quot;: 7,
+    &quot;artifact_digest&quot;: &quot;756b676d245e7366cbb94f494717f3edafa60351069f24069f916c909c695206&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 10,
+    &quot;stage&quot;: &quot;risk_quantifier&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 11,
+    &quot;stage&quot;: &quot;synthesizer&quot;
+  },
+  {
+    &quot;active_ms&quot;: 43,
+    &quot;artifact_digest&quot;: &quot;dfbe550044ac91353e74140e02110f6104bba35463d6bf30670493b3bd6f0a4f&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 12,
+    &quot;stage&quot;: &quot;synthesizer&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 13,
+    &quot;stage&quot;: &quot;evidence_review&quot;
+  },
+  {
+    &quot;active_ms&quot;: 53,
+    &quot;artifact_digest&quot;: &quot;ae7f305f333e79bdda9e6bf8c29df44987d5cbbbe14406a2b95527432a739765&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 14,
+    &quot;stage&quot;: &quot;evidence_review&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 15,
+    &quot;stage&quot;: &quot;route_review&quot;
+  },
+  {
+    &quot;active_ms&quot;: 1,
+    &quot;artifact_digest&quot;: &quot;f37e5fd6cefcb12422c57293177cfe6e7336851752358440af7ef6c569f3301e&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 16,
+    &quot;stage&quot;: &quot;route_review&quot;
+  },
+  {
+    &quot;event&quot;: &quot;stage_started&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 17,
+    &quot;stage&quot;: &quot;report_generator&quot;
+  },
+  {
+    &quot;active_ms&quot;: 9,
+    &quot;artifact_digest&quot;: &quot;28add8518e1dc632b3bb5d45fe43bb0a32ba4213301fdd893515d79880cdd669&quot;,
+    &quot;event&quot;: &quot;stage_completed&quot;,
+    &quot;run_id&quot;: &quot;700a2944-849d-5f0b-b311-d99a5d44e19d&quot;,
+    &quot;sequence&quot;: 18,
+    &quot;stage&quot;: &quot;report_generator&quot;
+  }
+]</pre></section><section id="page-4" hidden><h1 tabindex="-1">Credit Memo</h1><pre class="card"># Deal or No Deal AI — Educational Credit Memo
+
+**Fixture demonstration. Canned stage response; no live AI inference or real credit approval.**
+
+Run: 700a2944\-849d\-5f0b\-b311\-d99a5d44e19d · Revision: 1 · Generated: 2026\-10\-24T07:00:26\.586819\+00:00
+
+## Executive Summary
+
+Borrower: Example Equipment LLC. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+
+- Facility: TERM\_LOAN. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Requested amount: 1200000. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Currency: USD. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Term in months: 48. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Maturity date: 2030\-10\-23. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Repayment structure: Principal and interest per supplied annual forecast schedule; full\-term adequacy not assessed. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Use of proceeds: USD 900000 equipment purchase and USD 300000 repayment of existing funded debt. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Collateral: First\-ranking charge over COLLATERAL\-1 equipment pool. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Guarantees: Explicitly none documented. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+- Interest terms: Fixed annual rate 6%. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+
+Annual DSCR is 1\.50x; this does not assess full\-term repayment\. [CALC\-004 \(FIN\-1\.0\)](#cite-edaf368f5bbc6c50)
+
+Applicable sample checks passed; this is not legal clearance or covenant compliance\. [Fictional policy checks](#cite-f915be2643e97e05)
+
+The complete authored assessment is Low, not a default probability\. [Educational risk assessment](#cite-28c960302f2ebaa0)
+
+## Compliance
+
+Fictional policy pack: SAMPLE\-LOAN\-POLICY\-1\.0.
+
+- SYN\-ESC\-001: Pass; APPLIES; observed 1\.5. Exception/referral trigger: CALC\-004 &amp;lt; 1\.25; matched: No. [SYN\-ESC\-001 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-1076022b5dbfc3d6)
+- SYN\-ESC\-002: Pass; APPLIES; observed 3. Exception/referral trigger: CALC\-005 &amp;gt; 4; matched: No. [SYN\-ESC\-002 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-f32424f6988f007c)
+- SYN\-ESC\-004: Pass; APPLIES; observed 60. Exception/referral trigger: CALC\-006 &amp;gt; 80; matched: No. [SYN\-ESC\-004 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-ab0699f8bf746081)
+- SYN\-ESC\-005: Pass; APPLIES; observed 48. Exception/referral trigger: term\_months &amp;gt; 60; matched: No. [SYN\-ESC\-005 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-abb0a8a085c78caa)
+- SYN\-ESC\-006: Pass; APPLIES; observed Not a numeric check. Exception/referral trigger: required\_equipment\_evidence\_unusable; matched: No. [SYN\-ESC\-006 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-38e691d1bb68a17c)
+- SYN\-ESC\-007: Pass; APPLIES; observed Not a numeric check. Exception/referral trigger: required\_financial\_inputs\_unusable; matched: No. [SYN\-ESC\-007 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-3876890f64f85766)
+- SYN\-ESC\-008: Pass; APPLIES; observed Not a numeric check. Exception/referral trigger: unresolved\_material\_rate\_or\_term\_conflict; matched: No. [SYN\-ESC\-008 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-d5c49c0396b5c814)
+- SYN\-ESC\-009: Not applicable; NOT\_APPLICABLE; observed Not a numeric check. Exception/referral trigger: required\_synthetic\_control\_unresolved; matched: Not evaluated. [SYN\-ESC\-009 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-2a1b1c05ad25bece)
+- SYN\-ESC\-010: Not applicable; NOT\_APPLICABLE; observed Not a numeric check. Exception/referral trigger: required\_synthetic\_control\_unresolved; matched: Not evaluated. [SYN\-ESC\-010 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-68dd02f0696fbb90)
+- SYN\-ESC\-011: NOT\_TRIGGERED; APPLIES; observed 1200000. Exception/referral trigger: requested\_amount &amp;gt;= 10000000; matched: No. [SYN\-ESC\-011 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-240ac7dc48c2ed07)
+- SYN\-ESC\-012: NOT\_TRIGGERED; APPLIES; observed 0\.85. Exception/referral trigger: confidence &amp;lt; 0\.7; matched: No. [SYN\-ESC\-012 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-1dd5e983554313d5)
+
+Policy exceptions: 0. Sample-policy results are not legal clearance or covenant compliance.
+
+## Financial Analysis
+
+Review as of 2026\-10\-23; evidence cutoff 2026\-10\-24T04:04:22\.887785\+00:00.
+
+Supplied annual projection: 2027\-01\-01 to 2027\-12\-31, USD, scale 1.
+
+Annual-period analysis; full-term/balloon/refinancing adequacy not evaluated. Reported/adjusted EBITDA reconciliation deferred.
+
+- EBIT: 900000\.00 USD; FIN\-1\.0. [CALC\-001 \(FIN\-1\.0\)](#cite-5c45d9fc7271ad47)
+- EBITDA: 1100000\.00 USD; FIN\-1\.0. [CALC\-002 \(FIN\-1\.0\)](#cite-7dd7a659a81d7b60)
+- Post-loan funded debt: 3300000\.00 USD; FIN\-1\.0. [CALC\-003 \(FIN\-1\.0\)](#cite-d25bde428b54ad13)
+- DSCR: 1\.50 RATIO; FIN\-1\.0. [CALC\-004 \(FIN\-1\.0\)](#cite-edaf368f5bbc6c50)
+- Debt / EBITDA: 3\.00 RATIO; FIN\-1\.0. [CALC\-005 \(FIN\-1\.0\)](#cite-1ec2afd7059fb32f)
+- Equipment LTV: 60\.00 PERCENT; FIN\-1\.0. [CALC\-006 \(FIN\-1\.0\)](#cite-6b91a1009daf6f2b)
+- Revenue growth: 10\.00 PERCENT; FIN\-1\.0. [CALC\-007 \(FIN\-1\.0\)](#cite-2154f9ad859e784a)
+- Current ratio: 2\.00 RATIO; FIN\-1\.0. [CALC\-008 \(FIN\-1\.0\)](#cite-706b75fd5c6a73e0)
+- Interest coverage: 9\.00 RATIO; FIN\-1\.0. [CALC\-009 \(FIN\-1\.0\)](#cite-2ef1b796f23e1d00)
+
+
+## Risk Scores
+
+Credit risk: **21\.00/100 — LOW**. [Educational risk assessment](#cite-28c960302f2ebaa0)
+
+Policy exceptions: 0. Missing material evidence: 0. These are separate assessments for this registered synthetic fixture.
+
+- repayment\_capacity: rating 20; weight 0\.3; contribution 6. [repayment\_capacity authored assessment](#cite-e4bee5b46e4df95d)
+- financial\_leverage: rating 25; weight 0\.2; contribution 5. [financial\_leverage authored assessment](#cite-ab4cb75cdaac18c1)
+- collateral\_quality: rating 20; weight 0\.2; contribution 4. [collateral\_quality authored assessment](#cite-6f2add25b2c4ce7c)
+- borrower\_credit\_profile: rating 15; weight 0\.2; contribution 3. [borrower\_credit\_profile authored assessment](#cite-670611ed8383df86)
+- business\_industry\_risk: rating 30; weight 0\.1; contribution 3. [business\_industry\_risk authored assessment](#cite-e84a4c0ff2ce822b)
+
+Authored educational assessments, not probability of default. Concentration: Not assessed.
+
+## Decision
+
+Simulated recommendation: **Approve**. Uncalibrated fixture confidence: 0\.85.
+
+Supported annual repayment metrics and the supplied Low assessment support this simulated recommendation; contractual covenants remain unevaluated\. [CALC\-004 \(FIN\-1\.0\)](#cite-edaf368f5bbc6c50) · [Fictional policy checks](#cite-f915be2643e97e05) · [Educational risk assessment](#cite-28c960302f2ebaa0)
+
+Human credit review: Not required by configured demo rules. Human disposition: None recorded.
+
+Narrative support: FIXTURE_EXPECTATION_CHECKED; not HUMAN_SUPPORTED. This report does not authorize lending or funding.
+
+## Conditions
+
+Model-proposed conditions: None. Human modifications: None recorded.
+
+Documentary covenants — EXTRACTED_NOT_EVALUATED: \[&#x27;Supply annual financial statements&#x27;\]. [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+
+## Audit Log
+
+Recorded audit cutoff: sequence 17. Local SQLite history is not immutable audit storage.
+
+- 1: pdf\_input — stage\_started.
+- 2: pdf\_input — stage\_completed.
+- 3: extractor — stage\_started.
+- 4: extractor — stage\_completed.
+- 5: financial\_analyst — stage\_started.
+- 6: financial\_analyst — stage\_completed.
+- 7: compliance\_check — stage\_started.
+- 8: compliance\_check — stage\_completed.
+- 9: risk\_quantifier — stage\_started.
+- 10: risk\_quantifier — stage\_completed.
+- 11: synthesizer — stage\_started.
+- 12: synthesizer — stage\_completed.
+- 13: evidence\_review — stage\_started.
+- 14: evidence\_review — stage\_completed.
+- 15: route\_review — stage\_started.
+- 16: route\_review — stage\_completed.
+- 17: report\_generator — stage\_started.
+
+Source and reference index (retained synthetic snapshot):
+
+#### cite-f19abd02db31683e
+
+AGREEMENT\-1 2\-draft, page 1 · SOURCE
+
+Source SHA256: 2446e33a148ec7a9f2c5a46d06267845e1ab0fe2e9313851d1280aeea936ca8b
+
+&gt; DEAL OR NO DEAL AI \- EDUCATIONAL SOURCE
+&gt; AUTHORING DRAFT \- FICTIONAL \- NOT AN EXECUTED AGREEMENT
+&gt; Equipment term\-loan summary \| E\-N01 \| Version 1
+&gt; Prepared: 2026\-10\-22 \| Proposed transaction date: 2026\-10\-23
+&gt; Borrower and legal entity: Example Equipment LLC
+&gt; Lender: Demo Learning Bank \(fictional\)
+&gt; Facility: One USD term loan; reference E\-N01\-FACILITY
+&gt; Requested and proposed funded amount: USD 1200000
+&gt; Documented term: 48 months
+&gt; Documented maturity date: 2030\-10\-23
+&gt; Fixed annual interest rate: 6%; no index, spread or reset applies\.
+&gt; Repayment: Principal and interest per the supplied annual forecast schedule\.
+&gt; Full\-term amortization, balloon and refinancing adequacy are not assessed\.
+&gt; Use of proceeds: USD 900000 equipment purchase and USD 300000 repayment
+&gt; of existing funded debt\. These allocations are fictional case assumptions\.
+&gt; Security: First\-ranking charge over the equipment pool in COLLATERAL\-1\.
+&gt; Guarantees: None\. This is an explicit fictional term, not missing information\.
+&gt; Covenants: Supply annual financial statements\. No automatic covenant
+&gt; compliance conclusion is made by the educational application\.
+&gt; The financial schedules concern this borrower and this one facility only\.
+&gt; They are case\-author supplied projections, not forecasts generated by AI\.
+&gt; The prepared date is not proof that a real loan exists or has been approved\.
+
+#### cite-79c22eee326bb7fb
+
+FINANCIALS\-1 2\-draft, page 1 · SOURCE
+
+Source SHA256: f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5
+
+&gt; DEAL OR NO DEAL AI \- EDUCATIONAL SOURCE
+&gt; AUTHORING DRAFT \- FICTIONAL \- NOT AUDITED FINANCIAL STATEMENTS
+&gt; Example Equipment LLC \| E\-N01\-FACILITY \| FINANCIALS\-1 v1 \| Page 1 of 2
+&gt; Prepared: 2026\-10\-22\. USD whole units; not thousands or millions\.
+&gt; Standalone borrower scope; no parent, guarantor or unrelated facility\.
+&gt; 2026 and 2027 columns below are supplied annual projections, not actuals\.
+&gt; Calendar years: 01 January through 31 December of each named year\.
+&gt; ANNUAL PROJECTION                     2026              2027
+&gt; Revenue                            4000000           4400000
+&gt; Net income                         Not supplied       700000
+&gt; Interest expense                   Not supplied       100000
+&gt; Income\-tax expense                 Not supplied       100000
+&gt; Depreciation                       Not supplied       100000
+&gt; Amortization                       Not supplied       100000
+&gt; No discretionary EBITDA addbacks are supplied or permitted\.
+&gt; Revenue growth compares these two author\-supplied annual projections;
+&gt; it is projected growth, not a measured historical business outcome\.
+&gt; Cash available for debt service, annual principal and interest, and the
+&gt; required scope qualification continue on FINANCIALS\-1 page 2\.
+&gt; Neither revenue nor EBITDA substitutes for documented cash available\.
+
+#### cite-d49abc26ae320058
+
+FINANCIALS\-1 2\-draft, page 2 · SOURCE
+
+Source SHA256: f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5
+
+&gt; DEAL OR NO DEAL AI \- EDUCATIONAL SOURCE
+&gt; AUTHORING DRAFT \- FICTIONAL \- SUPPLIED SCHEDULE, NOT AN AI FORECAST
+&gt; Example Equipment LLC \| E\-N01\-FACILITY \| FINANCIALS\-1 v1 \| Page 2 of 2
+&gt; USD whole units\. Annual projection: 2027\-01\-01 through 2027\-12\-31\.
+&gt; Standalone borrower; transaction basis TXN\-1, pro forma at 2026\-10\-23\.
+&gt; SUPPLIED ANNUAL DEBT\-SERVICE AND CASH SCHEDULE
+&gt; Cash available for debt service:                900000
+&gt; Annual principal payments:                     500000
+&gt; Annual interest payments:                      100000
+&gt; Qualification: Both payment lines include the proposed E\-N01 loan and
+&gt; remaining borrower funded debt after the documented repayment\.
+&gt; These are supplied annual totals, not a validated full\-term loan schedule\.
+&gt; DOCUMENTED TRANSACTION AND BALANCE\-SHEET BASIS TXN\-1
+&gt; Existing funded debt immediately before transaction:       2400000
+&gt; Proposed funded borrowing in this transaction:              1200000
+&gt; Existing funded debt repaid in this transaction:             300000
+&gt; Current assets, same pro\-forma date:                        1500000
+&gt; Current liabilities, same pro\-forma date:                    750000
+&gt; The repaid 300000 is already part of existing funded debt and is deducted
+&gt; once only\. Do not subtract it a second time or assume a net\-cash deduction\.
+&gt; Existing remaining debt has no prior\-ranking lien on COLLATERAL\-1&#x27;s pool
+&gt; under this fictional scenario\. See COLLATERAL\-1 page 1 for explicit liens\.
+&gt; FINANCIALS\-1 page 1 supplies annual income\-statement components and units\.
+
+#### cite-153e57555af4d3b8
+
+COLLATERAL\-1 2\-draft, page 1 · SOURCE
+
+Source SHA256: 8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2
+
+&gt; DEAL OR NO DEAL AI \- EDUCATIONAL SOURCE
+&gt; AUTHORING DRAFT \- FICTIONAL \- NOT A REAL APPRAISAL OR LIEN SEARCH
+&gt; Example Equipment LLC \| E\-N01\-FACILITY \| COLLATERAL\-1 v1 \| Page 1 of 2
+&gt; Prepared: 2026\-10\-22\. Valuation basis: proposed transaction 2026\-10\-23\.
+&gt; Currency: USD whole units\. Equipment collateral only; no real estate\.
+&gt; Eligible equipment pool value:                         2000000
+&gt; Proposed facility exposure secured by this pool:        1200000
+&gt; Documented prior\-ranking liens on this pool:                  0
+&gt; The 2000000 combines existing and proposed eligible equipment under this
+&gt; fictional case&#x27;s stated basis; do not treat it as new\-purchase cost alone\.
+&gt; The explicit zero is an authored scenario fact, not a default for missing
+&gt; lien data\. No haircut, lien search, valuation verification or legal opinion
+&gt; has been performed\. These statements require review before case registration\.
+&gt; Scope: The same Example Equipment LLC and E\-N01\-FACILITY as the loan and
+&gt; financial schedules\. Values are synthetic inputs for FIN\-1\.0 only\.
+
+#### cite-fc76a25657ccb32f
+
+COLLATERAL\-1 2\-draft, page 2 · SOURCE
+
+Source SHA256: 8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2
+
+&gt; DEAL OR NO DEAL AI \- EDUCATIONAL SOURCE
+&gt; AUTHORING DRAFT \- FICTIONAL \- CASE\-AUTHOR ASSESSMENTS, NOT BANK RATINGS
+&gt; Example Equipment LLC \| E\-N01\-FACILITY \| COLLATERAL\-1 v1 \| Page 2 of 2
+&gt; Assessment as of: 2026\-10\-23\. Subject: standalone borrower only\.
+&gt; All premises and ratings below await human case\-author review\.
+&gt; Fictional credit\-history premise: scheduled payments are current with no
+&gt; recorded arrears within the scenario\. No bureau or external check was run\.
+&gt; Fictional business premise: an equipment\-using manufacturer with ordinary
+&gt; cyclical demand exposure\. No market research or concentration test was run\.
+&gt; PROPOSED EDUCATIONAL FACTOR ASSESSMENTS \- HIGHER MEANS MORE RISK
+&gt; Repayment capacity: 20/100\. Basis: supplied annual CFADS and debt service\.
+&gt; Financial leverage: 25/100\. Basis: documented debt and EBITDA components\.
+&gt; Collateral quality: 20/100\. Basis: supplied equipment value/exposure/liens\.
+&gt; Borrower credit profile: 15/100\. Basis: the fictional history premise above\.
+&gt; Business and industry risk: 30/100\. Basis: the fictional business premise above\.
+&gt; These are individually authored illustrative ratings, not generated by a
+&gt; DSCR, LTV, leverage or credit\-score conversion rule\. No predictive model,
+&gt; probability of default or real underwriting recommendation is represented\.
+&gt; Missing or unsupported material inputs invalidate the affected assessment;
+&gt; the presence of a proposed rating never cures missing evidence\.
+
+#### cite-5c45d9fc7271ad47
+
+CALC\-001 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-001
+- inputs: \[&#x27;net\_income&#x27;, &#x27;interest\_expense&#x27;, &#x27;income\_tax\_expense&#x27;\]
+- unit: USD
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 900000
+- denominator: 1
+- multiplier: 1
+- value: 900000
+- display: 900000\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P1&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb)
+
+#### cite-7dd7a659a81d7b60
+
+CALC\-002 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-002
+- inputs: \[&#x27;net\_income&#x27;, &#x27;interest\_expense&#x27;, &#x27;income\_tax\_expense&#x27;, &#x27;depreciation&#x27;, &#x27;amortization&#x27;\]
+- unit: USD
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 1100000
+- denominator: 1
+- multiplier: 1
+- value: 1100000
+- display: 1100000\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P1&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb)
+
+#### cite-d25bde428b54ad13
+
+CALC\-003 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-003
+- inputs: \[&#x27;existing\_funded\_debt&#x27;, &#x27;proposed\_funded\_borrowing&#x27;, &#x27;transaction\_debt\_repaid&#x27;\]
+- unit: USD
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 3300000
+- denominator: 1
+- multiplier: 1
+- value: 3300000
+- display: 3300000\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P2&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-edaf368f5bbc6c50
+
+CALC\-004 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-004
+- inputs: \[&#x27;cash\_available\_for\_debt\_service&#x27;, &#x27;annual\_principal\_payments&#x27;, &#x27;annual\_interest\_payments&#x27;\]
+- unit: RATIO
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 900000
+- denominator: 600000
+- multiplier: 1
+- value: 1\.5
+- display: 1\.50
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P2&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-1ec2afd7059fb32f
+
+CALC\-005 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-005
+- inputs: \[&#x27;existing\_funded\_debt&#x27;, &#x27;proposed\_funded\_borrowing&#x27;, &#x27;transaction\_debt\_repaid&#x27;, &#x27;net\_income&#x27;, &#x27;interest\_expense&#x27;, &#x27;income\_tax\_expense&#x27;, &#x27;depreciation&#x27;, &#x27;amortization&#x27;\]
+- unit: RATIO
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 3300000
+- denominator: 1100000
+- multiplier: 1
+- value: 3
+- display: 3\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P1&#x27;, &#x27;FIN\-P2&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb) · [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-6b91a1009daf6f2b
+
+CALC\-006 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-006
+- inputs: \[&#x27;secured\_facility\_exposure&#x27;, &#x27;prior\_ranking\_liens&#x27;, &#x27;eligible\_equipment\_value&#x27;\]
+- unit: PERCENT
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 1200000
+- denominator: 2000000
+- multiplier: 100
+- value: 60
+- display: 60\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;COLLATERAL\-P1&#x27;\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 1](#cite-153e57555af4d3b8)
+
+#### cite-2154f9ad859e784a
+
+CALC\-007 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-007
+- inputs: \[&#x27;current\_revenue&#x27;, &#x27;previous\_revenue&#x27;\]
+- unit: PERCENT
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 400000
+- denominator: 4000000
+- multiplier: 100
+- value: 10
+- display: 10\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P1&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb)
+
+#### cite-706b75fd5c6a73e0
+
+CALC\-008 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-008
+- inputs: \[&#x27;current\_assets&#x27;, &#x27;current\_liabilities&#x27;\]
+- unit: RATIO
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 1500000
+- denominator: 750000
+- multiplier: 1
+- value: 2
+- display: 2\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P2&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-2ef1b796f23e1d00
+
+CALC\-009 \(FIN\-1\.0\) · CALCULATION
+
+- metric\_id: CALC\-009
+- inputs: \[&#x27;net\_income&#x27;, &#x27;interest\_expense&#x27;, &#x27;income\_tax\_expense&#x27;\]
+- unit: RATIO
+- validity: VALID
+- reason: ARITHMETIC\_ONLY
+- numerator: 900000
+- denominator: 100000
+- multiplier: 1
+- value: 9
+- display: 9\.00
+- definition\_version: FIN\-1\.0
+- source\_refs: \[&#x27;FIN\-P1&#x27;\]
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb)
+
+#### cite-1076022b5dbfc3d6
+
+SYN\-ESC\-001 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-001
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: CALC\-004 &amp;lt; 1\.25
+- observed: 1\.5
+- threshold: 1\.25
+- unit: RATIO
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;FIN\-P2&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-001&#x27;\]
+- calculation\_ref: CALC\-004
+- numerator: 900000
+- denominator: 600000
+- multiplier: 1
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-f32424f6988f007c
+
+SYN\-ESC\-002 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-002
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: CALC\-005 &amp;gt; 4
+- observed: 3
+- threshold: 4
+- unit: RATIO
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;FIN\-P1&#x27;, &#x27;FIN\-P2&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-002&#x27;\]
+- calculation\_ref: CALC\-005
+- numerator: 3300000
+- denominator: 1100000
+- multiplier: 1
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb) · [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-ab0699f8bf746081
+
+SYN\-ESC\-004 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-004
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: CALC\-006 &amp;gt; 80
+- observed: 60
+- threshold: 80
+- unit: PERCENT
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;COLLATERAL\-P1&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-004&#x27;\]
+- calculation\_ref: CALC\-006
+- numerator: 1200000
+- denominator: 2000000
+- multiplier: 100
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 1](#cite-153e57555af4d3b8)
+
+#### cite-abb0a8a085c78caa
+
+SYN\-ESC\-005 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-005
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: term\_months &amp;gt; 60
+- observed: 48
+- threshold: 60
+- unit: MONTHS
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;AGREEMENT\-P1&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-005&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+
+#### cite-38e691d1bb68a17c
+
+SYN\-ESC\-006 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-006
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: required\_equipment\_evidence\_unusable
+- observed: None
+- threshold: None
+- unit: None
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;COLLATERAL\-P1&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-006&#x27;\]
+- calculation\_ref: CALC\-006
+- numerator: 1200000
+- denominator: 2000000
+- multiplier: 100
+- reason: SUPPORTED\_FIXTURE\_INPUTS
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 1](#cite-153e57555af4d3b8)
+
+#### cite-3876890f64f85766
+
+SYN\-ESC\-007 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-007
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: required\_financial\_inputs\_unusable
+- observed: None
+- threshold: None
+- unit: None
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-007&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: FINANCIAL\_PREREQUISITES
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+#### cite-d5c49c0396b5c814
+
+SYN\-ESC\-008 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-008
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: unresolved\_material\_rate\_or\_term\_conflict
+- observed: None
+- threshold: None
+- unit: None
+- condition\_result: False
+- outcome: Pass
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-008&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: SOURCE\_CONFLICT\_CHECK
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+#### cite-2a1b1c05ad25bece
+
+SYN\-ESC\-009 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-009
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: NOT\_APPLICABLE
+- evaluation\_state: NOT\_APPLICABLE
+- predicate: required\_synthetic\_control\_unresolved
+- observed: None
+- threshold: None
+- unit: None
+- condition\_result: None
+- outcome: Not applicable
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-009&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: APPROVED\_SYNTHETIC\_CASE\_NOT\_REQUIRED
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+#### cite-68dd02f0696fbb90
+
+SYN\-ESC\-010 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-010
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: INTERNAL\_SAMPLE\_POLICY
+- applicability: NOT\_APPLICABLE
+- evaluation\_state: NOT\_APPLICABLE
+- predicate: required\_synthetic\_control\_unresolved
+- observed: None
+- threshold: None
+- unit: None
+- condition\_result: None
+- outcome: Not applicable
+- control\_result: None
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-010&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: APPROVED\_SYNTHETIC\_CASE\_NOT\_REQUIRED
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+#### cite-240ac7dc48c2ed07
+
+SYN\-ESC\-011 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-011
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: DEMO\_PRODUCT\_CONTROL
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: requested\_amount &amp;gt;= 10000000
+- observed: 1200000
+- threshold: 10000000
+- unit: USD
+- condition\_result: False
+- outcome: None
+- control\_result: NOT\_TRIGGERED
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;AGREEMENT\-P1&#x27;, &#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-011&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+Supporting references: [AGREEMENT\-1 2\-draft, page 1](#cite-f19abd02db31683e)
+
+#### cite-1dd5e983554313d5
+
+SYN\-ESC\-012 \(SAMPLE\-LOAN\-POLICY\-1\.0\) · POLICY
+
+- rule\_id: SYN\-ESC\-012
+- policy\_version: SAMPLE\-LOAN\-POLICY\-1\.0
+- authority: DEMO\_PRODUCT\_CONTROL
+- applicability: APPLIES
+- evaluation\_state: EVALUATED
+- predicate: confidence &amp;lt; 0\.7
+- observed: 0\.85
+- threshold: 0\.7
+- unit: None
+- condition\_result: False
+- outcome: None
+- control\_result: NOT\_TRIGGERED
+- workflow: CONTINUE
+- severity: None
+- owner: None
+- issue\_id: None
+- source\_refs: \[&#x27;policy:SAMPLE\-LOAN\-POLICY\-1\.0:SYN\-ESC\-012&#x27;\]
+- calculation\_ref: None
+- numerator: None
+- denominator: None
+- multiplier: None
+- reason: RECORDED\_PREDICATE
+- dependency\_digest: 541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7
+- handler\_version: POLICY\-HANDLERS\-1\.0
+
+#### cite-e4bee5b46e4df95d
+
+repayment\_capacity authored assessment · ASSESSMENT
+
+- factor\_id: repayment\_capacity
+- rating: 20
+- weight: 0\.3
+- contribution: 6
+- assessment\_id: assessment:E\-N01:repayment\_capacity
+- assessment\_version: 1\-draft
+- reason: Authored assessment supported by supplied annual cash available and debt\-service schedule; no ratio\-to\-grade conversion
+- refs: \[&#x27;ASSESSMENT\-P2&#x27;, &#x27;FIN\-P1&#x27;, &#x27;FIN\-P2&#x27;\]
+- material\_fields: \[&#x27;cash\_available\_for\_debt\_service&#x27;, &#x27;annual\_principal\_payments&#x27;, &#x27;annual\_interest\_payments&#x27;\]
+- required\_metrics: \[&#x27;CALC\-004&#x27;\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 2](#cite-fc76a25657ccb32f) · [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb) · [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-ab4cb75cdaac18c1
+
+financial\_leverage authored assessment · ASSESSMENT
+
+- factor\_id: financial\_leverage
+- rating: 25
+- weight: 0\.2
+- contribution: 5
+- assessment\_id: assessment:E\-N01:financial\_leverage
+- assessment\_version: 1\-draft
+- reason: Authored assessment supported by funded\-debt and unadjusted EBITDA components; no automatic rating rule
+- refs: \[&#x27;ASSESSMENT\-P2&#x27;, &#x27;FIN\-P1&#x27;, &#x27;FIN\-P2&#x27;\]
+- material\_fields: \[&#x27;existing\_funded\_debt&#x27;, &#x27;proposed\_funded\_borrowing&#x27;, &#x27;transaction\_debt\_repaid&#x27;, &#x27;net\_income&#x27;, &#x27;interest\_expense&#x27;, &#x27;income\_tax\_expense&#x27;, &#x27;depreciation&#x27;, &#x27;amortization&#x27;\]
+- required\_metrics: \[&#x27;CALC\-005&#x27;\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 2](#cite-fc76a25657ccb32f) · [FINANCIALS\-1 2\-draft, page 1](#cite-79c22eee326bb7fb) · [FINANCIALS\-1 2\-draft, page 2](#cite-d49abc26ae320058)
+
+#### cite-6f2add25b2c4ce7c
+
+collateral\_quality authored assessment · ASSESSMENT
+
+- factor\_id: collateral\_quality
+- rating: 20
+- weight: 0\.2
+- contribution: 4
+- assessment\_id: assessment:E\-N01:collateral\_quality
+- assessment\_version: 1\-draft
+- reason: Authored assessment supported by eligible equipment value, secured exposure and explicit prior liens
+- refs: \[&#x27;ASSESSMENT\-P2&#x27;, &#x27;COLLATERAL\-P1&#x27;\]
+- material\_fields: \[&#x27;eligible\_equipment\_value&#x27;, &#x27;prior\_ranking\_liens&#x27;, &#x27;secured\_facility\_exposure&#x27;\]
+- required\_metrics: \[&#x27;CALC\-006&#x27;\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 2](#cite-fc76a25657ccb32f) · [COLLATERAL\-1 2\-draft, page 1](#cite-153e57555af4d3b8)
+
+#### cite-670611ed8383df86
+
+borrower\_credit\_profile authored assessment · ASSESSMENT
+
+- factor\_id: borrower\_credit\_profile
+- rating: 15
+- weight: 0\.2
+- contribution: 3
+- assessment\_id: assessment:E\-N01:borrower\_credit\_profile
+- assessment\_version: 1\-draft
+- reason: Authored assessment based on the approved fictional payment\-current premise; no bureau verification
+- refs: \[&#x27;ASSESSMENT\-P2&#x27;\]
+- material\_fields: \[\]
+- required\_metrics: \[\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 2](#cite-fc76a25657ccb32f)
+
+#### cite-e84a4c0ff2ce822b
+
+business\_industry\_risk authored assessment · ASSESSMENT
+
+- factor\_id: business\_industry\_risk
+- rating: 30
+- weight: 0\.1
+- contribution: 3
+- assessment\_id: assessment:E\-N01:business\_industry\_risk
+- assessment\_version: 1\-draft
+- reason: Authored assessment based on the approved fictional manufacturing/cyclicality premise; no market research or concentration score
+- refs: \[&#x27;ASSESSMENT\-P2&#x27;\]
+- material\_fields: \[\]
+- required\_metrics: \[\]
+
+Supporting references: [COLLATERAL\-1 2\-draft, page 2](#cite-fc76a25657ccb32f)
+
+#### cite-c08ececc2d59df5e
+
+Annual financial analysis · PANEL
+
+Supporting references: [CALC\-001 \(FIN\-1\.0\)](#cite-5c45d9fc7271ad47) · [CALC\-002 \(FIN\-1\.0\)](#cite-7dd7a659a81d7b60) · [CALC\-003 \(FIN\-1\.0\)](#cite-d25bde428b54ad13) · [CALC\-004 \(FIN\-1\.0\)](#cite-edaf368f5bbc6c50) · [CALC\-005 \(FIN\-1\.0\)](#cite-1ec2afd7059fb32f) · [CALC\-006 \(FIN\-1\.0\)](#cite-6b91a1009daf6f2b) · [CALC\-007 \(FIN\-1\.0\)](#cite-2154f9ad859e784a) · [CALC\-008 \(FIN\-1\.0\)](#cite-706b75fd5c6a73e0) · [CALC\-009 \(FIN\-1\.0\)](#cite-2ef1b796f23e1d00)
+
+#### cite-f915be2643e97e05
+
+Fictional policy checks · PANEL
+
+Supporting references: [SYN\-ESC\-001 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-1076022b5dbfc3d6) · [SYN\-ESC\-002 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-f32424f6988f007c) · [SYN\-ESC\-004 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-ab0699f8bf746081) · [SYN\-ESC\-005 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-abb0a8a085c78caa) · [SYN\-ESC\-006 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-38e691d1bb68a17c) · [SYN\-ESC\-007 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-3876890f64f85766) · [SYN\-ESC\-008 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-d5c49c0396b5c814) · [SYN\-ESC\-009 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-2a1b1c05ad25bece) · [SYN\-ESC\-010 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-68dd02f0696fbb90) · [SYN\-ESC\-011 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-240ac7dc48c2ed07) · [SYN\-ESC\-012 \(SAMPLE\-LOAN\-POLICY\-1\.0\)](#cite-1dd5e983554313d5)
+
+#### cite-28c960302f2ebaa0
+
+Educational risk assessment · PANEL
+
+Supporting references: [repayment\_capacity authored assessment](#cite-e4bee5b46e4df95d) · [financial\_leverage authored assessment](#cite-ab4cb75cdaac18c1) · [collateral\_quality authored assessment](#cite-6f2add25b2c4ce7c) · [borrower\_credit\_profile authored assessment](#cite-670611ed8383df86) · [business\_industry\_risk authored assessment](#cite-e84a4c0ff2ce822b)
+
+
+</pre></section><section id="page-5" hidden><h1 tabindex="-1">Decision History</h1><p>Actual financial review events only. Illustrative preview actions are excluded.</p><pre class="card">No human decisions recorded.</pre></section></main><script type="application/json" id="sources">{"AGREEMENT-P1": {"kind": "SOURCE", "label": "AGREEMENT-1 2-draft, page 1", "source_id": "AGREEMENT-1", "source_version": "2-draft", "source_sha256": "2446e33a148ec7a9f2c5a46d06267845e1ab0fe2e9313851d1280aeea936ca8b", "page": 1, "text": "DEAL OR NO DEAL AI - EDUCATIONAL SOURCE\nAUTHORING DRAFT - FICTIONAL - NOT AN EXECUTED AGREEMENT\nEquipment term-loan summary | E-N01 | Version 1\nPrepared: 2026-10-22 | Proposed transaction date: 2026-10-23\nBorrower and legal entity: Example Equipment LLC\nLender: Demo Learning Bank (fictional)\nFacility: One USD term loan; reference E-N01-FACILITY\nRequested and proposed funded amount: USD 1200000\nDocumented term: 48 months\nDocumented maturity date: 2030-10-23\nFixed annual interest rate: 6%; no index, spread or reset applies.\nRepayment: Principal and interest per the supplied annual forecast schedule.\nFull-term amortization, balloon and refinancing adequacy are not assessed.\nUse of proceeds: USD 900000 equipment purchase and USD 300000 repayment\nof existing funded debt. These allocations are fictional case assumptions.\nSecurity: First-ranking charge over the equipment pool in COLLATERAL-1.\nGuarantees: None. This is an explicit fictional term, not missing information.\nCovenants: Supply annual financial statements. No automatic covenant\ncompliance conclusion is made by the educational application.\nThe financial schedules concern this borrower and this one facility only.\nThey are case-author supplied projections, not forecasts generated by AI.\nThe prepared date is not proof that a real loan exists or has been approved.", "refs": []}, "FIN-P1": {"kind": "SOURCE", "label": "FINANCIALS-1 2-draft, page 1", "source_id": "FINANCIALS-1", "source_version": "2-draft", "source_sha256": "f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5", "page": 1, "text": "DEAL OR NO DEAL AI - EDUCATIONAL SOURCE\nAUTHORING DRAFT - FICTIONAL - NOT AUDITED FINANCIAL STATEMENTS\nExample Equipment LLC | E-N01-FACILITY | FINANCIALS-1 v1 | Page 1 of 2\nPrepared: 2026-10-22. USD whole units; not thousands or millions.\nStandalone borrower scope; no parent, guarantor or unrelated facility.\n2026 and 2027 columns below are supplied annual projections, not actuals.\nCalendar years: 01 January through 31 December of each named year.\nANNUAL PROJECTION                     2026              2027\nRevenue                            4000000           4400000\nNet income                         Not supplied       700000\nInterest expense                   Not supplied       100000\nIncome-tax expense                 Not supplied       100000\nDepreciation                       Not supplied       100000\nAmortization                       Not supplied       100000\nNo discretionary EBITDA addbacks are supplied or permitted.\nRevenue growth compares these two author-supplied annual projections;\nit is projected growth, not a measured historical business outcome.\nCash available for debt service, annual principal and interest, and the\nrequired scope qualification continue on FINANCIALS-1 page 2.\nNeither revenue nor EBITDA substitutes for documented cash available.", "refs": []}, "FIN-P2": {"kind": "SOURCE", "label": "FINANCIALS-1 2-draft, page 2", "source_id": "FINANCIALS-1", "source_version": "2-draft", "source_sha256": "f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5", "page": 2, "text": "DEAL OR NO DEAL AI - EDUCATIONAL SOURCE\nAUTHORING DRAFT - FICTIONAL - SUPPLIED SCHEDULE, NOT AN AI FORECAST\nExample Equipment LLC | E-N01-FACILITY | FINANCIALS-1 v1 | Page 2 of 2\nUSD whole units. Annual projection: 2027-01-01 through 2027-12-31.\nStandalone borrower; transaction basis TXN-1, pro forma at 2026-10-23.\nSUPPLIED ANNUAL DEBT-SERVICE AND CASH SCHEDULE\nCash available for debt service:                900000\nAnnual principal payments:                     500000\nAnnual interest payments:                      100000\nQualification: Both payment lines include the proposed E-N01 loan and\nremaining borrower funded debt after the documented repayment.\nThese are supplied annual totals, not a validated full-term loan schedule.\nDOCUMENTED TRANSACTION AND BALANCE-SHEET BASIS TXN-1\nExisting funded debt immediately before transaction:       2400000\nProposed funded borrowing in this transaction:              1200000\nExisting funded debt repaid in this transaction:             300000\nCurrent assets, same pro-forma date:                        1500000\nCurrent liabilities, same pro-forma date:                    750000\nThe repaid 300000 is already part of existing funded debt and is deducted\nonce only. Do not subtract it a second time or assume a net-cash deduction.\nExisting remaining debt has no prior-ranking lien on COLLATERAL-1's pool\nunder this fictional scenario. See COLLATERAL-1 page 1 for explicit liens.\nFINANCIALS-1 page 1 supplies annual income-statement components and units.", "refs": []}, "COLLATERAL-P1": {"kind": "SOURCE", "label": "COLLATERAL-1 2-draft, page 1", "source_id": "COLLATERAL-1", "source_version": "2-draft", "source_sha256": "8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2", "page": 1, "text": "DEAL OR NO DEAL AI - EDUCATIONAL SOURCE\nAUTHORING DRAFT - FICTIONAL - NOT A REAL APPRAISAL OR LIEN SEARCH\nExample Equipment LLC | E-N01-FACILITY | COLLATERAL-1 v1 | Page 1 of 2\nPrepared: 2026-10-22. Valuation basis: proposed transaction 2026-10-23.\nCurrency: USD whole units. Equipment collateral only; no real estate.\nEligible equipment pool value:                         2000000\nProposed facility exposure secured by this pool:        1200000\nDocumented prior-ranking liens on this pool:                  0\nThe 2000000 combines existing and proposed eligible equipment under this\nfictional case's stated basis; do not treat it as new-purchase cost alone.\nThe explicit zero is an authored scenario fact, not a default for missing\nlien data. No haircut, lien search, valuation verification or legal opinion\nhas been performed. These statements require review before case registration.\nScope: The same Example Equipment LLC and E-N01-FACILITY as the loan and\nfinancial schedules. Values are synthetic inputs for FIN-1.0 only.", "refs": []}, "ASSESSMENT-P2": {"kind": "SOURCE", "label": "COLLATERAL-1 2-draft, page 2", "source_id": "COLLATERAL-1", "source_version": "2-draft", "source_sha256": "8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2", "page": 2, "text": "DEAL OR NO DEAL AI - EDUCATIONAL SOURCE\nAUTHORING DRAFT - FICTIONAL - CASE-AUTHOR ASSESSMENTS, NOT BANK RATINGS\nExample Equipment LLC | E-N01-FACILITY | COLLATERAL-1 v1 | Page 2 of 2\nAssessment as of: 2026-10-23. Subject: standalone borrower only.\nAll premises and ratings below await human case-author review.\nFictional credit-history premise: scheduled payments are current with no\nrecorded arrears within the scenario. No bureau or external check was run.\nFictional business premise: an equipment-using manufacturer with ordinary\ncyclical demand exposure. No market research or concentration test was run.\nPROPOSED EDUCATIONAL FACTOR ASSESSMENTS - HIGHER MEANS MORE RISK\nRepayment capacity: 20/100. Basis: supplied annual CFADS and debt service.\nFinancial leverage: 25/100. Basis: documented debt and EBITDA components.\nCollateral quality: 20/100. Basis: supplied equipment value/exposure/liens.\nBorrower credit profile: 15/100. Basis: the fictional history premise above.\nBusiness and industry risk: 30/100. Basis: the fictional business premise above.\nThese are individually authored illustrative ratings, not generated by a\nDSCR, LTV, leverage or credit-score conversion rule. No predictive model,\nprobability of default or real underwriting recommendation is represented.\nMissing or unsupported material inputs invalidate the affected assessment;\nthe presence of a proposed rating never cures missing evidence.", "refs": []}, "calc:CALC-001": {"kind": "CALCULATION", "label": "CALC-001 (FIN-1.0)", "value": {"metric_id": "CALC-001", "inputs": ["net_income", "interest_expense", "income_tax_expense"], "unit": "USD", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "900000", "denominator": "1", "multiplier": "1", "value": "900000", "display": "900000.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P1"]}, "refs": ["FIN-P1"]}, "calc:CALC-002": {"kind": "CALCULATION", "label": "CALC-002 (FIN-1.0)", "value": {"metric_id": "CALC-002", "inputs": ["net_income", "interest_expense", "income_tax_expense", "depreciation", "amortization"], "unit": "USD", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "1100000", "denominator": "1", "multiplier": "1", "value": "1100000", "display": "1100000.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P1"]}, "refs": ["FIN-P1"]}, "calc:CALC-003": {"kind": "CALCULATION", "label": "CALC-003 (FIN-1.0)", "value": {"metric_id": "CALC-003", "inputs": ["existing_funded_debt", "proposed_funded_borrowing", "transaction_debt_repaid"], "unit": "USD", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "3300000", "denominator": "1", "multiplier": "1", "value": "3300000", "display": "3300000.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P2"]}, "refs": ["FIN-P2"]}, "calc:DSCR": {"kind": "CALCULATION", "label": "CALC-004 (FIN-1.0)", "value": {"metric_id": "CALC-004", "inputs": ["cash_available_for_debt_service", "annual_principal_payments", "annual_interest_payments"], "unit": "RATIO", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "900000", "denominator": "600000", "multiplier": "1", "value": "1.5", "display": "1.50", "definition_version": "FIN-1.0", "source_refs": ["FIN-P2"]}, "refs": ["FIN-P2"]}, "calc:CALC-005": {"kind": "CALCULATION", "label": "CALC-005 (FIN-1.0)", "value": {"metric_id": "CALC-005", "inputs": ["existing_funded_debt", "proposed_funded_borrowing", "transaction_debt_repaid", "net_income", "interest_expense", "income_tax_expense", "depreciation", "amortization"], "unit": "RATIO", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "3300000", "denominator": "1100000", "multiplier": "1", "value": "3", "display": "3.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P1", "FIN-P2"]}, "refs": ["FIN-P1", "FIN-P2"]}, "calc:CALC-006": {"kind": "CALCULATION", "label": "CALC-006 (FIN-1.0)", "value": {"metric_id": "CALC-006", "inputs": ["secured_facility_exposure", "prior_ranking_liens", "eligible_equipment_value"], "unit": "PERCENT", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "1200000", "denominator": "2000000", "multiplier": "100", "value": "60", "display": "60.00", "definition_version": "FIN-1.0", "source_refs": ["COLLATERAL-P1"]}, "refs": ["COLLATERAL-P1"]}, "calc:CALC-007": {"kind": "CALCULATION", "label": "CALC-007 (FIN-1.0)", "value": {"metric_id": "CALC-007", "inputs": ["current_revenue", "previous_revenue"], "unit": "PERCENT", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "400000", "denominator": "4000000", "multiplier": "100", "value": "10", "display": "10.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P1"]}, "refs": ["FIN-P1"]}, "calc:CALC-008": {"kind": "CALCULATION", "label": "CALC-008 (FIN-1.0)", "value": {"metric_id": "CALC-008", "inputs": ["current_assets", "current_liabilities"], "unit": "RATIO", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "1500000", "denominator": "750000", "multiplier": "1", "value": "2", "display": "2.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P2"]}, "refs": ["FIN-P2"]}, "calc:CALC-009": {"kind": "CALCULATION", "label": "CALC-009 (FIN-1.0)", "value": {"metric_id": "CALC-009", "inputs": ["net_income", "interest_expense", "income_tax_expense"], "unit": "RATIO", "validity": "VALID", "reason": "ARITHMETIC_ONLY", "numerator": "900000", "denominator": "100000", "multiplier": "1", "value": "9", "display": "9.00", "definition_version": "FIN-1.0", "source_refs": ["FIN-P1"]}, "refs": ["FIN-P1"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-001": {"kind": "POLICY", "label": "SYN-ESC-001 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": "CALC-004", "condition_result": false, "control_result": null, "denominator": "600000", "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": "1", "numerator": "900000", "observed": "1.5", "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "CALC-004 \u003c 1.25", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-001", "severity": null, "source_refs": ["FIN-P2", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-001"], "threshold": "1.25", "unit": "RATIO", "workflow": "CONTINUE"}, "refs": ["FIN-P2"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-002": {"kind": "POLICY", "label": "SYN-ESC-002 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": "CALC-005", "condition_result": false, "control_result": null, "denominator": "1100000", "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": "1", "numerator": "3300000", "observed": "3", "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "CALC-005 > 4", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-002", "severity": null, "source_refs": ["FIN-P1", "FIN-P2", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-002"], "threshold": "4", "unit": "RATIO", "workflow": "CONTINUE"}, "refs": ["FIN-P1", "FIN-P2"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-004": {"kind": "POLICY", "label": "SYN-ESC-004 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": "CALC-006", "condition_result": false, "control_result": null, "denominator": "2000000", "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": "100", "numerator": "1200000", "observed": "60", "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "CALC-006 > 80", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-004", "severity": null, "source_refs": ["COLLATERAL-P1", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-004"], "threshold": "80", "unit": "PERCENT", "workflow": "CONTINUE"}, "refs": ["COLLATERAL-P1"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-005": {"kind": "POLICY", "label": "SYN-ESC-005 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": null, "condition_result": false, "control_result": null, "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": "48", "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "term_months > 60", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-005", "severity": null, "source_refs": ["AGREEMENT-P1", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-005"], "threshold": "60", "unit": "MONTHS", "workflow": "CONTINUE"}, "refs": ["AGREEMENT-P1"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-006": {"kind": "POLICY", "label": "SYN-ESC-006 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": "CALC-006", "condition_result": false, "control_result": null, "denominator": "2000000", "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": "100", "numerator": "1200000", "observed": null, "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "required_equipment_evidence_unusable", "reason": "SUPPORTED_FIXTURE_INPUTS", "rule_id": "SYN-ESC-006", "severity": null, "source_refs": ["COLLATERAL-P1", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-006"], "threshold": null, "unit": null, "workflow": "CONTINUE"}, "refs": ["COLLATERAL-P1"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-007": {"kind": "POLICY", "label": "SYN-ESC-007 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": null, "condition_result": false, "control_result": null, "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": null, "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "required_financial_inputs_unusable", "reason": "FINANCIAL_PREREQUISITES", "rule_id": "SYN-ESC-007", "severity": null, "source_refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-007"], "threshold": null, "unit": null, "workflow": "CONTINUE"}, "refs": []}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-008": {"kind": "POLICY", "label": "SYN-ESC-008 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": null, "condition_result": false, "control_result": null, "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": null, "outcome": "Pass", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "unresolved_material_rate_or_term_conflict", "reason": "SOURCE_CONFLICT_CHECK", "rule_id": "SYN-ESC-008", "severity": null, "source_refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-008"], "threshold": null, "unit": null, "workflow": "CONTINUE"}, "refs": []}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-009": {"kind": "POLICY", "label": "SYN-ESC-009 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "NOT_APPLICABLE", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": null, "condition_result": null, "control_result": null, "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "NOT_APPLICABLE", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": null, "outcome": "Not applicable", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "required_synthetic_control_unresolved", "reason": "APPROVED_SYNTHETIC_CASE_NOT_REQUIRED", "rule_id": "SYN-ESC-009", "severity": null, "source_refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-009"], "threshold": null, "unit": null, "workflow": "CONTINUE"}, "refs": []}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-010": {"kind": "POLICY", "label": "SYN-ESC-010 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "NOT_APPLICABLE", "authority": "INTERNAL_SAMPLE_POLICY", "calculation_ref": null, "condition_result": null, "control_result": null, "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "NOT_APPLICABLE", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": null, "outcome": "Not applicable", "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "required_synthetic_control_unresolved", "reason": "APPROVED_SYNTHETIC_CASE_NOT_REQUIRED", "rule_id": "SYN-ESC-010", "severity": null, "source_refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-010"], "threshold": null, "unit": null, "workflow": "CONTINUE"}, "refs": []}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-011": {"kind": "POLICY", "label": "SYN-ESC-011 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "DEMO_PRODUCT_CONTROL", "calculation_ref": null, "condition_result": false, "control_result": "NOT_TRIGGERED", "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": "1200000", "outcome": null, "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "requested_amount >= 10000000", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-011", "severity": null, "source_refs": ["AGREEMENT-P1", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-011"], "threshold": "10000000", "unit": "USD", "workflow": "CONTINUE"}, "refs": ["AGREEMENT-P1"]}, "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-012": {"kind": "POLICY", "label": "SYN-ESC-012 (SAMPLE-LOAN-POLICY-1.0)", "value": {"applicability": "APPLIES", "authority": "DEMO_PRODUCT_CONTROL", "calculation_ref": null, "condition_result": false, "control_result": "NOT_TRIGGERED", "denominator": null, "dependency_digest": "541d23e610a28a15f09732d6e194120680b5d91a91ab230da33a48068b729be7", "evaluation_state": "EVALUATED", "handler_version": "POLICY-HANDLERS-1.0", "issue_id": null, "multiplier": null, "numerator": null, "observed": "0.85", "outcome": null, "owner": null, "policy_version": "SAMPLE-LOAN-POLICY-1.0", "predicate": "confidence \u003c 0.7", "reason": "RECORDED_PREDICATE", "rule_id": "SYN-ESC-012", "severity": null, "source_refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-012"], "threshold": "0.7", "unit": null, "workflow": "CONTINUE"}, "refs": []}, "assessment:E-N01:repayment_capacity": {"kind": "ASSESSMENT", "label": "repayment_capacity authored assessment", "value": {"factor_id": "repayment_capacity", "rating": "20", "weight": "0.3", "contribution": "6", "assessment_id": "assessment:E-N01:repayment_capacity", "assessment_version": "1-draft", "reason": "Authored assessment supported by supplied annual cash available and debt-service schedule; no ratio-to-grade conversion", "refs": ["ASSESSMENT-P2", "FIN-P1", "FIN-P2"], "material_fields": ["cash_available_for_debt_service", "annual_principal_payments", "annual_interest_payments"], "required_metrics": ["CALC-004"]}, "refs": ["ASSESSMENT-P2", "FIN-P1", "FIN-P2"]}, "assessment:E-N01:financial_leverage": {"kind": "ASSESSMENT", "label": "financial_leverage authored assessment", "value": {"factor_id": "financial_leverage", "rating": "25", "weight": "0.2", "contribution": "5", "assessment_id": "assessment:E-N01:financial_leverage", "assessment_version": "1-draft", "reason": "Authored assessment supported by funded-debt and unadjusted EBITDA components; no automatic rating rule", "refs": ["ASSESSMENT-P2", "FIN-P1", "FIN-P2"], "material_fields": ["existing_funded_debt", "proposed_funded_borrowing", "transaction_debt_repaid", "net_income", "interest_expense", "income_tax_expense", "depreciation", "amortization"], "required_metrics": ["CALC-005"]}, "refs": ["ASSESSMENT-P2", "FIN-P1", "FIN-P2"]}, "assessment:E-N01:collateral_quality": {"kind": "ASSESSMENT", "label": "collateral_quality authored assessment", "value": {"factor_id": "collateral_quality", "rating": "20", "weight": "0.2", "contribution": "4", "assessment_id": "assessment:E-N01:collateral_quality", "assessment_version": "1-draft", "reason": "Authored assessment supported by eligible equipment value, secured exposure and explicit prior liens", "refs": ["ASSESSMENT-P2", "COLLATERAL-P1"], "material_fields": ["eligible_equipment_value", "prior_ranking_liens", "secured_facility_exposure"], "required_metrics": ["CALC-006"]}, "refs": ["ASSESSMENT-P2", "COLLATERAL-P1"]}, "assessment:E-N01:borrower_credit_profile": {"kind": "ASSESSMENT", "label": "borrower_credit_profile authored assessment", "value": {"factor_id": "borrower_credit_profile", "rating": "15", "weight": "0.2", "contribution": "3", "assessment_id": "assessment:E-N01:borrower_credit_profile", "assessment_version": "1-draft", "reason": "Authored assessment based on the approved fictional payment-current premise; no bureau verification", "refs": ["ASSESSMENT-P2"], "material_fields": [], "required_metrics": []}, "refs": ["ASSESSMENT-P2"]}, "assessment:E-N01:business_industry_risk": {"kind": "ASSESSMENT", "label": "business_industry_risk authored assessment", "value": {"factor_id": "business_industry_risk", "rating": "30", "weight": "0.1", "contribution": "3", "assessment_id": "assessment:E-N01:business_industry_risk", "assessment_version": "1-draft", "reason": "Authored assessment based on the approved fictional manufacturing/cyclicality premise; no market research or concentration score", "refs": ["ASSESSMENT-P2"], "material_fields": [], "required_metrics": []}, "refs": ["ASSESSMENT-P2"]}, "panel:FINANCIAL": {"kind": "PANEL", "label": "Annual financial analysis", "refs": ["calc:CALC-001", "calc:CALC-002", "calc:CALC-003", "calc:DSCR", "calc:CALC-005", "calc:CALC-006", "calc:CALC-007", "calc:CALC-008", "calc:CALC-009"]}, "panel:COMPLIANCE": {"kind": "PANEL", "label": "Fictional policy checks", "refs": ["policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-001", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-002", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-004", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-005", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-006", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-007", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-008", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-009", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-010", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-011", "policy:SAMPLE-LOAN-POLICY-1.0:SYN-ESC-012"]}, "panel:RISK": {"kind": "PANEL", "label": "Educational risk assessment", "refs": ["assessment:E-N01:repayment_capacity", "assessment:E-N01:financial_leverage", "assessment:E-N01:collateral_quality", "assessment:E-N01:borrower_credit_profile", "assessment:E-N01:business_industry_risk"]}}</script><script>document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("section").forEach(s=>s.hidden=s.id!=="page-"+b.dataset.page);document.querySelector("section:not([hidden]) h1").focus()}));const r=JSON.parse(document.getElementById("sources").textContent);const s=document.getElementById("source");function show(){document.getElementById("evidence").textContent=JSON.stringify(r[s.value],null,2)}if(s){s.addEventListener("change",show);show()}</script></html>

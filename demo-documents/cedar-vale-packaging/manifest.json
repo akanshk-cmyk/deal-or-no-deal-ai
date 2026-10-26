@@ -1,0 +1,25 @@
+{
+  "borrower": "Cedar Vale Packaging LLC",
+  "status": "NEW_SYNTHETIC_SOURCE_NOT_REGISTERED_NOT_REVIEWED",
+  "sources": [
+    {
+      "filename": "01-loan-agreement.pdf",
+      "pages": 1,
+      "bytes": 1911,
+      "sha256": "130c299810116768d79cc6aca0b96578cfbbae378a196bbf173238c302803394"
+    },
+    {
+      "filename": "02-financial-projections.pdf",
+      "pages": 1,
+      "bytes": 2487,
+      "sha256": "49c5a37bfb96a864186c84b3c72fad30e7e086851af5f37e05baf9bfd993e2a8"
+    },
+    {
+      "filename": "03-collateral-evidence.pdf",
+      "pages": 1,
+      "bytes": 1752,
+      "sha256": "195378e4c17ed272fcc51ec523763b20dd5672513448c383e4667e3d136356ac"
+    }
+  ],
+  "total_bytes": 6150
+}

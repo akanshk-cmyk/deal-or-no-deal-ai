@@ -1,0 +1,27 @@
+{
+  "version": "E-N01-SYNTHESIS-RUBRIC-1.0",
+  "authoring_basis": "AI-authored fixture copied from the approved ordinary SYN-WIRE-1.0 example; user authorized normal E-N01 implementation.",
+  "evidence_type": "EDUCATIONAL_FIXTURE_EXPECTATION_NOT_LIVE_MODEL_RESULT",
+  "semantic_support": "AI_AUTHORED_EDUCATIONAL_FIXTURE_NOT_HUMAN_VERIFIED",
+  "wire_content_digest": "2afa82149f3f4d52bd6207735b9cbd88fbb6e1a63001802d90fc713b1dc887d6",
+  "narrative_text_digests": {
+    "observations[0].text": "cbf9830618710b0e29dadac249ff04d4416cbb30be52160af6176bc8c4693ac7",
+    "observations[1].text": "80b6d40fa7fc7426e99fa866ad57419f792650157953d4c9217dbe1541718909",
+    "observations[2].text": "9c6520a7e5cc3b4ffaad0aa9be35c1feffa34d7850524cd65c385c4f78b838c5",
+    "panel_decision.rationale": "0a4bd5877de7e31613e73eeab266b6231bf9289d1f4c37bcb8b7c21acffeb8b3"
+  },
+  "expected_case_observations": {
+    "dscr": "1.5",
+    "leverage": "3",
+    "ltv": "60",
+    "credit_score": "21",
+    "credit_band": "LOW",
+    "policy_exceptions": 0,
+    "missing_material_inputs": 0
+  },
+  "limitations": [
+    "Exact fixture checking is not general semantic entailment.",
+    "Confidence0.85 is the approved illustrative fixture value, not a measured model confidence.",
+    "No human approval or Live source-support record is created."
+  ]
+}

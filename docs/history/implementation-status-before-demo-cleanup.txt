@@ -1,0 +1,153 @@
+# Current implementation status
+
+## Unified review experience — 2026-10-25
+
+The saved interface is now the shared baseline. One Run AI Deal Review action
+uses the existing config/app.toml mode (FIXTURE by default; LIVE explicit).
+Scoped saved and live history share navigation, deal selection and workspace.
+Live verification is embedded under Human Review. See
+[the unified contract](specs/unified-review-experience.md); it supersedes earlier
+instructions to choose a Review mode in the sidebar. No backend workflows merged.
+
+## Review-mode UI consistency — 2026-10-25
+
+Saved and live reviews now share the deal context card and workspace tab labels.
+Live details use the same analysis/evidence layout, with explicit source badges,
+per-deal attempt history and Human Review checkpoints. See
+[the bounded UI change](design/review-mode-consistency.md). Backend behavior and
+human-review requirements are retained; identical visual structure does not
+imply identical mode capabilities.
+
+## Measured execution — 2026-10-25
+
+Current evidence: [live workflow and answer-quality results](evaluation/live-answer-quality-results.md).
+309 offline tests and 269 subtests passed. Actual live extraction passed and is
+waiting for human fact review. Native and custom RAGAS evaluated the original
+saved synthesis, not a completed live deal. Hosted embedding capability passed;
+semantic VECTOR/HYBRID benchmarks remain pending. This supersedes older claims
+below that no key, generation, embedding or judge calls have been verified.
+
+## LIVE-GRAPH-1.0 implementation update - 2026-10-24
+
+User authorized completing the live graph and evidence checkpoints. Follow
+[the live graph contract](specs/live-graph-integration.md). The shared build_graph now has an explicit
+live branch with a pre-calculation fact_review interrupt and a post-synthesis
+evidence_review interrupt. live_worker uses the existing SQLite admission/ledger,
+checkpointer, strict wire parsers and deterministic finance/policy/risk services.
+Actual response text is retained; registered sample answers are never a fallback.
+ReviewedLiveCase binds the actual extraction to source/profile validation and
+immutable human-support receipts without changing the original registration.
+
+Every present term/financial fact and authored scoring premise needs RiskManager
+support. Every observation, rationale, condition and next-action reason has an
+exact target; policy/control meaning requires ComplianceOfficer support and mixed
+content needs both domains. Source quotations, seven explicit checks, comments,
+role, target/source digests and UTC timestamps are recorded. Support is metadata
+only. Analyst continuation resumes the same checkpoint and cumulative ledger.
+Confidence-only normal credit review has a separate AuthorizedApprover checkpoint.
+Missing information stops before dependent work; live exceptions/conditions beyond
+this bounded E-N01 example stay blocked, never generically waived.
+
+Sidebar Review mode selects saved responses or Live AI reviews. Live review start,
+evidence forms, recorded activity, source-linked pure-Python memo and scoped local
+history are connected. Live setup/readiness remains in the sidebar only.
+Provider calls use the worker's existing admission claim, reserve the shared
+USD0.10 allowance and record actual reported usage; uncertain usage retains its
+reservation and blocks replay. No global enable-flag flip or new database.
+
+This is implemented integration, not evidence of paid model quality. Provider
+access, hosted model/schema/current rates and exact whole-request counts still
+require verification; each changed synthesis packet needs its own count evidence.
+No real Nebius call or judge was executed for this implementation. Hosted vectors,
+hybrid semantic benchmarking and LLM-based RAGAS remain separate pending work.
+
+
+## Live foundation update ? 2026-10-24
+
+User approved LIVE-COMPACT-1.0: extraction 4,000 input/1,000 output;
+synthesis 2,500/650. Aggregate 8,000/2,000 and protected correction
+1,500/350 remain unchanged; Demo prompts and stage limits are unchanged.
+The shared authorized spending allowance is USD0.10 across generation, embeddings
+and evaluation. See [live integration specification](specs/live-synthetic-integration.md)
+and [approved fit profile](evaluation/live-fit-proposal.md).
+
+Implemented: separate live specialist prompts, compact full-source E-N01 offline
+packets, explicit credential/readiness checks, guarded transport foundation with
+persistent allowance reservation, four-arm retrieval mechanics, and optional
+RAGAS 0.4.3/tokenizer dependencies. RAGAS requires the tested
+langchain-community 0.3.31 compatibility pin; ID metrics currently use its
+available public API with deprecation warnings.
+
+Measured: local packet components 3,699 extraction and 2,282 synthesis tokens;
+provider rendering overhead remains unverified. Six actual native RAGAS ID
+measurements over three synthetic questions: DIRECT recall 1.0 (precision not
+applicable); KEYWORD recall 1.0, precision 0.5. These tiny author-authored cases
+are diagnostic, not proof of semantic quality. VECTOR/HYBRID mechanics tests use
+synthetic vectors, not hosted embeddings. No real generation, embedding or judge
+calls have run; paid spend is zero. Complete live graph integration, source-backed
+critical-fact/narrative review, hosted embeddings/indexing, semantic benchmarks and
+LLM-based RAGAS/custom quality scores remain pending. The local API key is absent;
+model/schema/current rates and whole-request fit still require verification.
+An API key alone does not activate Live mode.
+
+
+Updated: 2026-10-24. This is the current status index. Older milestone paragraphs
+in architecture/specification documents are historical observations, not current
+blockers or permission to bypass present contracts. Requirements remain in PRD/specs.
+
+| Capability | Actual implementation | Remaining evidence/work |
+| --- | --- | --- |
+| Six-screen Streamlit app | Implemented; screenshot-inspired Dashboard | Operator usability/keyboard/zoom checks |
+| Uploaded PDF inspection | Analyst synthetic upload, bounded parser, retained originals/pages, scoped workspace library and citation/download | INSPECTED_NOT_REVIEWED only; semantic source/fact onboarding, financial graph and new-document continuation pending |
+| Uploaded evidence review | Manual source-bound annual CFADS/principal/interest proposals; exact-target RiskManager support; current compatible DSCR preview/history | Candidate-only human support, not full source/subject authority, critical-fact onboarding, model extraction or deal admission |
+| E-N01 normal/review/reassessment | Actual LangGraph, SQLite checkpoints and durable admission | Other case registrations and supported new-fact corrections |
+| E-M01 missing-data sample | Registered five-page case; actual five-node graph information pause and source-bound UI | Replacement-document intake and continuation not connected |
+| E-F03 supported Reject | Registered five-page case; real reviewed graph, separate RiskManager receipt, AuthorizedApprover Reject and source-linked memo/history | New-document continuation remains unsupported |
+| Extractor/Synthesizer | Saved responses preserved; actual-response Live branch and source-bound evidence checkpoints implemented | Verify provider access/schema/rates/whole-request limits and execute a paid synthetic journey; no real model-quality result yet |
+| Finance/policy/risk/memo | Deterministic and source-bound for registered E-N01/E-M01/E-F03/E-P01; missing data blocks synthesis/report | Full-term repayment/concentration remain outside current analysis |
+| Human actions | Scoped comments, Approve/Reject/Conditional Approve, information request, one exact-source response, separate exception handling and prepared condition/domain support | Arbitrary condition editing, fulfilment and new documents remain unsupported |
+| Financial History | Frozen events, all-permitted-deal filters, pagination, independent deal timeline and filtered CSV | Broad multi-deal intake not implemented; legacy missing metadata remains missing |
+| Provider boundary | Guarded transport integrated with the existing worker claim, shared allowance and cumulative ledger; unknown usage retained | Actual hosted model/schema/current rates and whole-request verification; credentials absent at latest check |
+| E-P01 | Registered five-page case, DSCR1.15/score33, actual reviewed graph, separate exception/draft/two-domain support, final Conditional Approve or Reject, memo/history/CSV | One unchanged source-backed condition only; stays OUTSTANDING/Unassigned, no fulfilment/funding |
+| Actual extraction-miss correction | E-N01 separate registered miss; Analyst source-backed Save→READY revision2, explicit Update, actual graph/memo/history/CSV | One exact CFADS repair only; arbitrary fields/values, completed/interrupted-review correction and new documents unsupported |
+| Jupyter/HTML | Shared graph notebook; clickable offline HTML | Real fresh-kernel notebook run not verified |
+| DIRECT grounding | Operational registered-case source package | General document intake/profile validation |
+| KEYWORD/VECTOR/HYBRID | Keyword and vector/hybrid mechanics implemented; DIRECT/KEYWORD tiny native-ID benchmark executed | Hosted embeddings/index and real four-arm semantic benchmark; vector tests currently use synthetic vectors |
+| RAGAS custom/native metrics | Optional dependency installed; lazy native ID precision/recall actually executed | Faithfulness/answer relevance and custom 1-5 judge adapter, frozen live examples and bounded paid evaluation |
+| User roles | Five simulated roles with backend permission checks | Real authentication intentionally out of educational scope |
+
+## Next implementation dependencies
+
+1. Source preparation now exists: three separate five-page candidate packages,
+   verified parsed text/hashes and extraction candidates. The user approved
+   E-P01's33/100 and E-F03's45/100 illustrative assessments and E-F03 cash bridge.
+   See evaluation/examples/core-case-authoring-proposal.md. E-M01 has no complete
+   score. All four core cases are now explicitly registered/selectable. E-F03 Reject
+   and E-P01 Conditional review execute in scoped tests with real handling/human
+   actions and generated memos. See specs/missing-data-integration.md,
+   specs/exception-reject-integration.md and specs/conditional-integration.md.
+2. Source-backed extraction correction now executes for E-N01's deliberate miss:
+   documented900000/FY-ASSESS/FIN-P2 only, explicit Save/Update, new revision/thread,
+   shared ledger, original extraction retained and reviewer provenance in memo/history.
+   Upload inspection is now implemented under specs/upload-inspection-integration.md.
+   Uploaded evidence review now supports three annual DSCR inputs with exact quotes,
+   normalized values and RiskManager support, under specs/upload-fact-review.md.
+   Next core gap: complete source/subject/basis and critical-fact onboarding before
+   financial graph admission or E-M01 continuation; current preview is candidate-only.
+   General correction editing and
+   completed/interrupted-review corrections remain unsupported. E-P01 is not a
+   general condition editor/fulfilment workflow. See specs/source-correction-integration.md.
+3. Live integration is implemented under LIVE-GRAPH-1.0 with approved compact Live prompts/wires, real response validation, source-bound human fact/narrative checkpoints and the existing shared durable allowance. An unverified next packet pauses for configuration without dispatch. Actual paid execution/model quality remains unverified.
+4. The user approved USD0.10 shared total spending. Real API use still requires user-provided access and verified model/schema/rates/whole-request fit. The explicit Live service has those scoped guards; keep global loader flags unchanged rather than bypassing validation.
+5. Complete operator UX checklist and notebook compatibility. Record observations,
+   not inferred accessibility or usability scores. Optional retrieval/RAGAS follow
+   the core working sample, without adding runtime judges or extra normal calls.
+
+Budget unchanged:8,000 input/2,000 output tokens,5 attempts,20 nodes,12 tools,
+180 active seconds,45 seconds per operation,$0.25 hard per-review ceiling. That
+ceiling is not a funded allowance. Rates in offline estimates are dated2026-10-23,
+not current invoice measurements. No automatic expiry, reset or deletion.
+
+Current evidence and exact commands: [execution.md](execution.md).
+
+Latest live integration verification: 261 full-suite tests and 269 subtests passed; after final support-check and exact-request persistence refinements, 13 focused checks passed. Actual paid execution/model quality is still unverified; key absent at the explicit local readiness check. See execution.md for commands/reports and limits.

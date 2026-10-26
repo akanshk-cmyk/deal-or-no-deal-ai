@@ -1,0 +1,77 @@
+{
+  "version": "CASE-REG-1.0",
+  "scenario_id": "E-N01",
+  "approval_basis": "User-authorized CORRECTION-1.0: Analyst restores documented CFADS900000 using original FIN-P2/FY-ASSESS; no new facts.",
+  "approved_assumption_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "approved_at_utc": "2026-10-24T04:04:22.887785+00:00",
+  "evidence_cutoff_at": "2026-10-24T04:04:22.887785+00:00",
+  "review_as_of": "2026-10-23",
+  "purpose": "CURRENT_REVIEW",
+  "source_profile_version": "E-N01-CORRECTION-1.0",
+  "deal_id": "2f32aa58-b265-5101-bd02-9ce37ae070bf",
+  "subject_id": "64d0e13f-80f9-5758-add8-0eb7fbb58ac9",
+  "facility_id": "d8baf86d-bc89-5c13-a313-09c858039ae9",
+  "input_revision": 2,
+  "manifest_sha256": "7f10135f5ed7d3ba294efd46276acf121f52a5e8f89d437ef1d2311ae7653bc0",
+  "case_sha256": "a7e4727f9bf69c22dc9fc78ce09f4923ad941ce8bc51ffafbb367cfabb3a0d6d",
+  "case_semantic_digest": "d2f2933ebdd807745e23e942b851d493a10febf21e8a417c869f23e1f25c97ec",
+  "extraction_sha256": "3e21e3e9840d5e3df7db3e0cec06a62bccad2c725a3017a71763af69b237dab7",
+  "extraction_semantic_digest": "e540f0bdc0226f787d4f3c41800dfc86f3e4fe058376bb4930d41aeff8db3832",
+  "policy_sha256": "de0c4625e9f84de2bce52ab2d69e5bde3b23be8678ddeca48a1f67df70f19c61",
+  "package_digest": "a289beadcbc9f338789ec9472a54e79687f7258c5bfef8a68c7fb3db5c9c1945",
+  "parser_version": "6.21.2",
+  "expected_pages": {
+    "AGREEMENT-P1": {
+      "source_id": "AGREEMENT-1",
+      "source_version": "2-draft",
+      "source_sha256": "2446e33a148ec7a9f2c5a46d06267845e1ab0fe2e9313851d1280aeea936ca8b",
+      "page": 1,
+      "text_sha256": "b0dc7ac3f475a21bc93f48364350716347c569a2def45a98d3935636bede0644"
+    },
+    "FIN-P1": {
+      "source_id": "FINANCIALS-1",
+      "source_version": "2-draft",
+      "source_sha256": "f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5",
+      "page": 1,
+      "text_sha256": "911dcbcfd1c825c7b64e29df45ddc75c052eeeddc1e34a65222a8d504092fb66"
+    },
+    "FIN-P2": {
+      "source_id": "FINANCIALS-1",
+      "source_version": "2-draft",
+      "source_sha256": "f01dbf327b72527c15e571560c16d513843e06d03dda2d970ec5a90298286fe5",
+      "page": 2,
+      "text_sha256": "9c3ba3a9663b4937e60991c39f3bb7874839f09bca660aa4b4d98441a3bf1a8f"
+    },
+    "COLLATERAL-P1": {
+      "source_id": "COLLATERAL-1",
+      "source_version": "2-draft",
+      "source_sha256": "8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2",
+      "page": 1,
+      "text_sha256": "13a5b267494b5f944faf0ae842d411b194a7513a62b87e3209566392040e96d6"
+    },
+    "ASSESSMENT-P2": {
+      "source_id": "COLLATERAL-1",
+      "source_version": "2-draft",
+      "source_sha256": "8347f8e00245df4466de6676b2edeb801384071164d8b0a2762d43ba5fa746f2",
+      "page": 2,
+      "text_sha256": "08b6c3783f395b9279651dc6f5620a81f686120604ac47989b48373e4aa299c6"
+    }
+  },
+  "instruction_hashes": {
+    "extractor": "82c6658fb5f2658e600c63ef2a0459aec3fde6acc3adcbe98dc79d363a3983b1",
+    "synthesizer": "3df6dca2dd24debad0b0744dec81f6693c0fb62ff74843bbfad19fd93ecdf90d"
+  },
+  "mode": "FIXTURE",
+  "variant": "default",
+  "limitations": [
+    "User-approved fictional premises; not professional financial validation",
+    "Source observations/cutoff are actual UTC registration time, separate from authored business dates",
+    "Registered default extraction for deterministic slice only; no synthesis/correction variant or full graph",
+    "No Live HUMAN_SUPPORTED records; no approval or funding action"
+  ]
+}

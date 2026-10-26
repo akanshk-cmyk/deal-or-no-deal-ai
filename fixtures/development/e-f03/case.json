@@ -1,0 +1,200 @@
+{
+  "scenario_id": "E-F03",
+  "version": "2-draft",
+  "status": "REGISTERED_SYNTHETIC_CORE_CASE",
+  "registered": true,
+  "case_approved": true,
+  "package_digest": "6bd7736085283a86664cb4cb1880fe91c6de6cb25265e78f04d47fa94b5937d7",
+  "author": "AI-assisted fixture preparation",
+  "human_reviewer": null,
+  "review_status": "USER_AUTHORIZED_EDUCATIONAL_CASE",
+  "approved_assumption_ids": [],
+  "proposed_assumption_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4"
+  ],
+  "mode": "FIXTURE_CANDIDATE_NOT_EXECUTABLE",
+  "scope": {
+    "deal_id": "37ff33a6-3fbd-5728-9a53-4adad5442273",
+    "subject_id": "7a8b8e92-c86e-5d97-8678-63bf17caf936",
+    "facility_id": "c6eab4ea-810a-5a56-91d9-b7759d8255bf"
+  },
+  "source_basis": {
+    "proposed_review_as_of": "2026-10-23",
+    "evidence_cutoff_at": null,
+    "profile_id": "E-F03-SOURCEFIT-DRAFT",
+    "profile_approved": false,
+    "proposed_field_authority": {
+      "terms": [
+        "E-F03:AGREEMENT-P1"
+      ],
+      "financials": [
+        "E-F03:FIN-P1",
+        "E-F03:FIN-P2"
+      ],
+      "equipment": [
+        "E-F03:COLLATERAL-P1"
+      ],
+      "authored_assessments": [
+        "E-F03:ASSESSMENT-P2"
+      ]
+    }
+  },
+  "bases": {
+    "FY-ASSESS": {
+      "kind": "SUPPLIED_ANNUAL_PROJECTION",
+      "start": "2027-01-01",
+      "end": "2027-12-31",
+      "currency": "USD",
+      "scale": "1"
+    },
+    "FY-PREV": {
+      "kind": "SUPPLIED_COMPARABLE_ANNUAL_PROJECTION",
+      "start": "2026-01-01",
+      "end": "2026-12-31",
+      "currency": "USD",
+      "scale": "1"
+    },
+    "TXN-1": {
+      "kind": "SUPPLIED_PRO_FORMA_TRANSACTION",
+      "as_of": "2026-10-23",
+      "currency": "USD",
+      "scale": "1"
+    }
+  },
+  "policy_config": {
+    "version": "E-F03-APPLICABILITY-DRAFT",
+    "policy_pack": "SAMPLE-LOAN-POLICY-1.0",
+    "secured_equipment": true,
+    "kyc_fixture_required": false,
+    "sanctions_fixture_required": false,
+    "basis": "Fictional teaching case only; not a legal exemption",
+    "approved": false
+  },
+  "subject_registry": {
+    "subject_label": "Example Equipment LLC",
+    "role": "BORROWER_STANDALONE",
+    "facility_reference": "E-F03-FACILITY",
+    "page_handles": [
+      "E-F03:AGREEMENT-P1",
+      "E-F03:FIN-P1",
+      "E-F03:FIN-P2",
+      "E-F03:COLLATERAL-P1",
+      "E-F03:ASSESSMENT-P2"
+    ],
+    "approved": false
+  },
+  "required_page_dependencies": {
+    "E-F03:FIN-P1": [
+      "E-F03:FIN-P2"
+    ],
+    "E-F03:FIN-P2": [
+      "E-F03:FIN-P1",
+      "E-F03:COLLATERAL-P1"
+    ]
+  },
+  "factor_assessments": [
+    {
+      "factor_id": "repayment_capacity",
+      "proposed_rating": "100",
+      "status": "PROPOSED_NOT_USABLE",
+      "attribution": "AI_ASSISTED_CASE_AUTHOR_DRAFT",
+      "version": "1-draft",
+      "as_of": "2026-10-23",
+      "refs": [
+        "E-F03:ASSESSMENT-P2"
+      ],
+      "material_financial_fields": [
+        "cash_available_for_debt_service",
+        "annual_principal_payments",
+        "annual_interest_payments"
+      ],
+      "material_source_refs": [
+        "E-F03:FIN-P1",
+        "E-F03:FIN-P2"
+      ]
+    },
+    {
+      "factor_id": "financial_leverage",
+      "proposed_rating": "25",
+      "status": "PROPOSED_NOT_USABLE",
+      "attribution": "AI_ASSISTED_CASE_AUTHOR_DRAFT",
+      "version": "1-draft",
+      "as_of": "2026-10-23",
+      "refs": [
+        "E-F03:ASSESSMENT-P2"
+      ],
+      "material_financial_fields": [
+        "existing_funded_debt",
+        "proposed_funded_borrowing",
+        "transaction_debt_repaid",
+        "net_income",
+        "interest_expense",
+        "income_tax_expense",
+        "depreciation",
+        "amortization"
+      ],
+      "material_source_refs": [
+        "E-F03:FIN-P1",
+        "E-F03:FIN-P2"
+      ]
+    },
+    {
+      "factor_id": "collateral_quality",
+      "proposed_rating": "20",
+      "status": "PROPOSED_NOT_USABLE",
+      "attribution": "AI_ASSISTED_CASE_AUTHOR_DRAFT",
+      "version": "1-draft",
+      "as_of": "2026-10-23",
+      "refs": [
+        "E-F03:ASSESSMENT-P2"
+      ],
+      "material_financial_fields": [
+        "eligible_equipment_value",
+        "prior_ranking_liens",
+        "secured_facility_exposure"
+      ],
+      "material_source_refs": [
+        "E-F03:COLLATERAL-P1"
+      ]
+    },
+    {
+      "factor_id": "borrower_credit_profile",
+      "proposed_rating": "15",
+      "status": "PROPOSED_NOT_USABLE",
+      "attribution": "AI_ASSISTED_CASE_AUTHOR_DRAFT",
+      "version": "1-draft",
+      "as_of": "2026-10-23",
+      "refs": [
+        "E-F03:ASSESSMENT-P2"
+      ],
+      "material_financial_fields": [],
+      "material_source_refs": [
+        "E-F03:ASSESSMENT-P2"
+      ]
+    },
+    {
+      "factor_id": "business_industry_risk",
+      "proposed_rating": "30",
+      "status": "PROPOSED_NOT_USABLE",
+      "attribution": "AI_ASSISTED_CASE_AUTHOR_DRAFT",
+      "version": "1-draft",
+      "as_of": "2026-10-23",
+      "refs": [
+        "E-F03:ASSESSMENT-P2"
+      ],
+      "material_financial_fields": [],
+      "material_source_refs": [
+        "E-F03:ASSESSMENT-P2"
+      ]
+    }
+  ],
+  "limitations": [
+    "No registered extraction/synthesis variant",
+    "No current-input fixture matching yet",
+    "No HUMAN_SUPPORTED records",
+    "No parser fidelity or source applicability verification"
+  ]
+}

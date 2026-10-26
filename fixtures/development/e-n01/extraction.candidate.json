@@ -1,0 +1,235 @@
+{
+  "terms": {
+    "borrower": {
+      "value": "Example Equipment LLC",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "legal_entity": {
+      "value": "Example Equipment LLC",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "facility_type": {
+      "value": "TERM_LOAN",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "requested_amount": {
+      "value": "1200000",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "currency": {
+      "value": "USD",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "term_months": {
+      "value": 48,
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "maturity_date": {
+      "value": "2030-10-23",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "interest_terms": {
+      "value": {
+        "kind": "FIXED",
+        "annual_rate_percent": "6",
+        "index": null,
+        "spread_bps": null,
+        "reset_frequency": null,
+        "floor_percent": null
+      },
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "repayment_structure": {
+      "value": "Principal and interest per supplied annual forecast schedule; full-term adequacy not assessed",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "collateral": {
+      "value": [
+        "First-ranking charge over COLLATERAL-1 equipment pool"
+      ],
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "guarantees": {
+      "value": [],
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "covenants": {
+      "value": [
+        "Supply annual financial statements"
+      ],
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    },
+    "use_of_proceeds": {
+      "value": "USD 900000 equipment purchase and USD 300000 repayment of existing funded debt",
+      "refs": [
+        "AGREEMENT-P1"
+      ],
+      "basis_id": null
+    }
+  },
+  "financial_inputs": {
+    "net_income": {
+      "value": "700000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "interest_expense": {
+      "value": "100000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "income_tax_expense": {
+      "value": "100000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "depreciation": {
+      "value": "100000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "amortization": {
+      "value": "100000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "cash_available_for_debt_service": {
+      "value": "900000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "annual_principal_payments": {
+      "value": "500000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "annual_interest_payments": {
+      "value": "100000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "existing_funded_debt": {
+      "value": "2400000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "proposed_funded_borrowing": {
+      "value": "1200000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "transaction_debt_repaid": {
+      "value": "300000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "eligible_equipment_value": {
+      "value": "2000000",
+      "refs": [
+        "COLLATERAL-P1"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "prior_ranking_liens": {
+      "value": "0",
+      "refs": [
+        "COLLATERAL-P1"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "secured_facility_exposure": {
+      "value": "1200000",
+      "refs": [
+        "COLLATERAL-P1"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "current_revenue": {
+      "value": "4400000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-ASSESS"
+    },
+    "previous_revenue": {
+      "value": "4000000",
+      "refs": [
+        "FIN-P1"
+      ],
+      "basis_id": "FY-PREV"
+    },
+    "current_assets": {
+      "value": "1500000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "TXN-1"
+    },
+    "current_liabilities": {
+      "value": "750000",
+      "refs": [
+        "FIN-P2"
+      ],
+      "basis_id": "TXN-1"
+    }
+  },
+  "conflicts": []
+}

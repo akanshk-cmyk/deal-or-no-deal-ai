@@ -1,0 +1,27 @@
+DEAL OR NO DEAL AI - EDUCATIONAL SOURCE
+AUTHORING DRAFT - FICTIONAL - SUPPLIED SCHEDULE, NOT AN AI FORECAST
+
+Example Equipment LLC | E-P01-FACILITY | E-P01-FINANCIALS-1 v1 | Page 2 of 2
+USD whole units. Annual projection: 2027-01-01 through 2027-12-31.
+Standalone borrower; transaction basis TXN-1, pro forma at 2026-10-23.
+
+SUPPLIED ANNUAL DEBT-SERVICE AND CASH SCHEDULE
+Cash available for debt service:                690000
+Annual principal payments:                     500000
+Annual interest payments:                      100000
+Qualification: Both payment lines include the proposed E-P01 loan and
+remaining borrower funded debt after the documented repayment.
+These are supplied annual totals, not a validated full-term loan schedule.
+
+DOCUMENTED TRANSACTION AND BALANCE-SHEET BASIS TXN-1
+Existing funded debt immediately before transaction:       2400000
+Proposed funded borrowing in this transaction:              1200000
+Existing funded debt repaid in this transaction:             300000
+Current assets, same pro-forma date:                        1500000
+Current liabilities, same pro-forma date:                    750000
+
+The repaid 300000 is already part of existing funded debt and is deducted
+once only. Do not subtract it a second time or assume a net-cash deduction.
+Existing remaining debt has no prior-ranking lien on E-P01-COLLATERAL-1's pool
+under this fictional scenario. See E-P01-COLLATERAL-1 page 1 for explicit liens.
+E-P01-FINANCIALS-1 page 1 supplies annual income-statement components and units.

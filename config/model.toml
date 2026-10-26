@@ -1,0 +1,9 @@
+# Intentionally no model, rates, tokenizer or provider credentials in M1.
+live_enabled = false
+evaluation_enabled = false
+hosted_tracing_enabled = false
+
+# Fixed M1 instruction baseline; changes require reviewed profile updates.
+[instructions]
+extractor = '82c6658fb5f2658e600c63ef2a0459aec3fde6acc3adcbe98dc79d363a3983b1'
+synthesizer = '3df6dca2dd24debad0b0744dec81f6693c0fb62ff74843bbfad19fd93ecdf90d'

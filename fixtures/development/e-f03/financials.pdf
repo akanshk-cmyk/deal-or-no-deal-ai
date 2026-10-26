@@ -1,0 +1,102 @@
+%PDF-1.4
+% E-F03 SYNTHETIC AUTHORING DRAFT
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [4 0 R 6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1518 >>
+stream
+BT /F1 10 Tf 14 TL 36 756 Td
+(DEAL OR NO DEAL AI - EDUCATIONAL SOURCE) Tj
+T* (AUTHORING DRAFT - FICTIONAL - NOT AUDITED FINANCIAL STATEMENTS) Tj
+T* () Tj
+T* (Example Equipment LLC | E-F03-FACILITY | E-F03-FINANCIALS-1 v1 | Page 1 of 2) Tj
+T* (Prepared: 2026-10-22. USD whole units; not thousands or millions.) Tj
+T* (Standalone borrower scope; no parent, guarantor or unrelated facility.) Tj
+T* (2026 and 2027 columns below are supplied annual projections, not actuals.) Tj
+T* (Calendar years: 01 January through 31 December of each named year.) Tj
+T* () Tj
+T* (ANNUAL PROJECTION                     2026              2027) Tj
+T* (Revenue                            4000000           4400000) Tj
+T* (Net income                         Not supplied      -300000) Tj
+T* (Interest expense                   Not supplied       100000) Tj
+T* (Income-tax expense                 Not supplied            0) Tj
+T* (Depreciation                       Not supplied       500000) Tj
+T* (Amortization                       Not supplied       800000) Tj
+T* () Tj
+T* (No discretionary EBITDA addbacks are supplied or permitted.) Tj
+T* (Revenue growth compares these two author-supplied annual projections;) Tj
+T* (it is projected growth, not a measured historical business outcome.) Tj
+T* () Tj
+T* (Cash available for debt service, annual principal and interest, and the) Tj
+T* (required scope qualification continue on E-F03-FINANCIALS-1 page 2.) Tj
+T* (Neither revenue nor EBITDA substitutes for documented cash available.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2033 >>
+stream
+BT /F1 10 Tf 14 TL 36 756 Td
+(DEAL OR NO DEAL AI - EDUCATIONAL SOURCE) Tj
+T* (AUTHORING DRAFT - FICTIONAL - SUPPLIED SCHEDULE, NOT AN AI FORECAST) Tj
+T* () Tj
+T* (Example Equipment LLC | E-F03-FACILITY | E-F03-FINANCIALS-1 v1 | Page 2 of 2) Tj
+T* (USD whole units. Annual projection: 2027-01-01 through 2027-12-31.) Tj
+T* (Standalone borrower; transaction basis TXN-1, pro forma at 2026-10-23.) Tj
+T* () Tj
+T* (SUPPLIED ANNUAL DEBT-SERVICE AND CASH SCHEDULE) Tj
+T* (Cash available for debt service:                -300000) Tj
+T* (Annual principal payments:                     500000) Tj
+T* (Annual interest payments:                      100000) Tj
+T* (Qualification: Both payment lines include the proposed E-F03 loan and) Tj
+T* (remaining borrower funded debt after the documented repayment.) Tj
+T* (These are supplied annual totals, not a validated full-term loan schedule.) Tj
+T* () Tj
+T* (DOCUMENTED TRANSACTION AND BALANCE-SHEET BASIS TXN-1) Tj
+T* (Existing funded debt immediately before transaction:       2400000) Tj
+T* (Proposed funded borrowing in this transaction:              1200000) Tj
+T* (Existing funded debt repaid in this transaction:             300000) Tj
+T* (Current assets, same pro-forma date:                        1500000) Tj
+T* (Current liabilities, same pro-forma date:                    750000) Tj
+T* () Tj
+T* (The repaid 300000 is already part of existing funded debt and is deducted) Tj
+T* (once only. Do not subtract it a second time or assume a net-cash deduction.) Tj
+T* (Existing remaining debt has no prior-ranking lien on E-F03-COLLATERAL-1's pool) Tj
+T* (under this fictional scenario. See E-F03-COLLATERAL-1 page 1 for explicit liens.) Tj
+T* (E-F03-FINANCIALS-1 page 1 supplies annual income-statement components and units.) Tj
+T* () Tj
+T* (APPROVED FICTIONAL CASH BRIDGE, BEFORE DEBT SERVICE) Tj
+T* (EBITDA 1100000 less working-capital cash outflow 800000) Tj
+T* (less capital cash outflow 600000 = CFADS -300000.) Tj
+T* (No further tax/interest deductions in this supplied bridge.) Tj
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000043 00000 n 
+0000000092 00000 n 
+0000000155 00000 n 
+0000000250 00000 n 
+0000000376 00000 n 
+0000001945 00000 n 
+0000002071 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+4155
+%%EOF

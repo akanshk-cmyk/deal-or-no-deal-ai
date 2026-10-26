@@ -1,0 +1,60 @@
+%PDF-1.4
+% CVP01 SYNTHETIC AUTHORING DRAFT
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [4 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1882 >>
+stream
+BT /F1 10 Tf 14 TL 36 756 Td
+(DEAL OR NO DEAL AI - FICTIONAL EDUCATIONAL FINANCIAL SCHEDULE) Tj
+T* (NOT AUDITED FINANCIAL STATEMENTS. ALL FIGURES ARE AUTHOR-SUPPLIED.) Tj
+T* (Borrower and legal entity: Cedar Vale Packaging LLC) Tj
+T* (Facility: CVP-DEMO-01. USD whole units; not thousands or millions.) Tj
+T* (Standalone borrower only; no parent, guarantor or unrelated facility.) Tj
+T* (2026 and 2027 columns below are supplied annual projections, not actuals.) Tj
+T* (Calendar years: 01 January through 31 December of each named year.) Tj
+T* (Annual projection: 2027-01-01 through 2027-12-31.) Tj
+T* (ANNUAL PROJECTION                         2026             2027) Tj
+T* (Revenue                               3000000          3300000) Tj
+T* (Net income                       Not supplied           480000) Tj
+T* (Interest expense                 Not supplied            60000) Tj
+T* (Income-tax expense               Not supplied           100000) Tj
+T* (Depreciation                     Not supplied           120000) Tj
+T* (Amortization                     Not supplied            40000) Tj
+T* (No discretionary EBITDA addbacks are supplied or permitted.) Tj
+T* (2027 annual cash available for debt service: 540000.) Tj
+T* (2027 annual principal payments: 300000; annual interest payments: 60000.) Tj
+T* (Both payment lines cover the proposed loan and remaining borrower debt.) Tj
+T* (Annual totals are supplied assumptions, not a validated full-term schedule.) Tj
+T* (Standalone borrower; transaction basis TXN-1, pro forma at 2026-10-25.) Tj
+T* (Existing funded debt before transaction: 1640000.) Tj
+T* (Proposed funded borrowing: 960000; existing funded debt repaid: 200000.) Tj
+T* (Deduct the repaid amount once only; it is part of existing funded debt.) Tj
+T* (Current assets, same pro-forma date: 900000.) Tj
+T* (Current liabilities, same pro-forma date: 450000.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000043 00000 n 
+0000000092 00000 n 
+0000000149 00000 n 
+0000000244 00000 n 
+0000000370 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2303
+%%EOF

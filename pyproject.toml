@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deal-or-no-deal-ai"
+version = "0.1.0"
+description = "Local educational multi-agent deal review prototype using synthetic data"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "pydantic>=2,<3",
+    "langgraph",
+    "langchain-core",
+    "langgraph-checkpoint-sqlite",
+    "streamlit",
+    "pypdf>=6.21.2",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.optional-dependencies]
+crawl = ["crawl4ai==0.9.5"]
+embeddings = ["sentence-transformers==6.2.0", "torch>=2.2"]
+evaluation = [
+    "langchain-community==0.3.31",
+    "ragas==0.4.3",
+    "tokenizers>=0.23.3",
+]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'win32' or sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit", "tests/integration"]
+addopts = "-ra -p no:langsmith_plugin"

@@ -1,0 +1,50 @@
+%PDF-1.4
+% CVP01 SYNTHETIC AUTHORING DRAFT
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [4 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1147 >>
+stream
+BT /F1 10 Tf 14 TL 36 756 Td
+(DEAL OR NO DEAL AI - FICTIONAL EDUCATIONAL COLLATERAL SCHEDULE) Tj
+T* (NOT AN APPRAISAL, LIEN SEARCH OR LEGAL OPINION.) Tj
+T* (Borrower and legal entity: Cedar Vale Packaging LLC) Tj
+T* (Facility: CVP-DEMO-01. Equipment collateral only; no real estate.) Tj
+T* (Prepared: 2026-10-25 | Proposed transaction date: 2026-10-25) Tj
+T* (Valuation and transaction basis: pro forma at 2026-10-25.) Tj
+T* (Currency: USD whole units; not thousands or millions.) Tj
+T* (Eligible equipment pool value: 1600000.) Tj
+T* (Proposed facility exposure secured by this pool: 960000.) Tj
+T* (Documented prior-ranking liens on this pool: 0.) Tj
+T* (The pool combines existing and proposed equipment, not new-purchase cost alone.) Tj
+T* (The explicit zero is fictional source data, not a missing-data default.) Tj
+T* (Remaining existing debt has no prior-ranking lien on this equipment pool.) Tj
+T* (No valuation verification or legal security review has been performed.) Tj
+T* (Borrower factor ratings, bureau reports, KYC and sanctions evidence not supplied.) Tj
+T* (No composite risk rating or probability of default is supplied.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000043 00000 n 
+0000000092 00000 n 
+0000000149 00000 n 
+0000000244 00000 n 
+0000000370 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1568
+%%EOF

@@ -1,0 +1,13 @@
+{
+  "version": "E-N01-SYNTHESIS-1.0",
+  "scenario_id": "E-N01",
+  "variant": "review",
+  "mode": "FIXTURE",
+  "case_dependency_digest": "603f560674381d2fc07d211bc7c59801bd4d5c85a826b180c730386f6fa18d42",
+  "package_digest": "a289beadcbc9f338789ec9472a54e79687f7258c5bfef8a68c7fb3db5c9c1945",
+  "input_digest": "f63a4ea5c17ce0ad5814efcdbf72db6c694b3d4f36467417372e86b33dd9086a",
+  "wire_sha256": "c79d887d4690de9c17adefbaae3f3c5715267e3e40923724fe3e4432de2cf907",
+  "rubric_sha256": "613e995cd0343709fba5b34fd66331dc8f9edfbc3476697d85757f7283b78c3c",
+  "authoring_basis": "FIN-REASSESS-1.0: confidence0.65 remains review-required; no inferred model improvement.",
+  "semantic_support": "AI_AUTHORED_EDUCATIONAL_FIXTURE_NOT_HUMAN_VERIFIED"
+}

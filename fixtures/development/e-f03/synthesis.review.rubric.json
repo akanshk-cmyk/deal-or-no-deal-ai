@@ -1,0 +1,22 @@
+{
+  "version": "E-F03-REJECT-RUBRIC-1.0",
+  "evidence_type": "EDUCATIONAL_FIXTURE_NOT_LIVE_QUALITY",
+  "wire_content_digest": "6a72dbb5b0a0915e303fc765099e7bd82116d8a7a7a768f15b4f5ec551d0596c",
+  "narrative_text_digests": {
+    "observations[0].text": "0af710625c02da5d295acc7b97e138fbc58c8ae14b3cab95f346ba5726616a13",
+    "observations[1].text": "4236ad7d4fe6b030a84006a772845145dd75911903b69e04df5caafccb28ac2a",
+    "observations[2].text": "3438eb6101f315541370a56be860d4522a1f46531c844c817dd2f037769707a1",
+    "panel_decision.rationale": "0ee6f0809f1ab2c5685444281c19fc869b6df4ea9a4a4eebb43e566a60287148"
+  },
+  "expected": {
+    "dscr": "-0.50",
+    "interest_coverage": "-2.00",
+    "score": "45",
+    "band": "MODERATE",
+    "decision": "Reject"
+  },
+  "limitations": [
+    "Case-specific authored judgment, not a universal policy rule",
+    "RiskManager handling does not replace final AuthorizedApprover decision"
+  ]
+}

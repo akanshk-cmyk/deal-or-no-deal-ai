@@ -1,0 +1,17 @@
+# GEN-COMPARE-1.0: offline preparation only; no provider credentials or activation.
+version = "GEN-COMPARE-1.0"
+provider = "NEBIUS"
+paid_execution_enabled = false
+allowance_status = "NOT_APPROVED"
+provider_contract_status = "UNVERIFIED"
+pricing_checked_on = "2026-10-23"
+
+[baseline]
+model_id = "Qwen/Qwen3-30B-A3B-Instruct-2507"
+input_usd_per_million_tokens = "0.10"
+output_usd_per_million_tokens = "0.30"
+
+[challenger]
+model_id = "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B"
+input_usd_per_million_tokens = "0.06"
+output_usd_per_million_tokens = "0.24"
