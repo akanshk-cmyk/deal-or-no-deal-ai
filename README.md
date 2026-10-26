@@ -4,9 +4,7 @@
 
 **A multi-agent financial deal review assistant built with LangGraph.** Upload a fictional commercial-loan package, inspect financial and policy findings, and prepare a source-linked credit memo. Reviewers can see what the documents support and what still needs attention.
 
-**Project 3B · Mastering Agentic AI · Week 3**
-
-[Project report](docs/weekly-project-report.md) · [Submission summary](docs/github-submission-summary.md) · [Synthetic upload package](demo-documents/cedar-vale-packaging/README.md)
+**Project - Mastering Agentic AI · Week 3**
 
 ## Why it exists
 
