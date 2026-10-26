@@ -36,11 +36,19 @@ One Deal ID links documents, results, memo and history. Preliminary upload calcu
 
 These actual captures show retained fictional reviews, not a newly executed upload journey. Counts reflect local demonstration history.
 
-![Deal Dashboard and attention queue](docs/images/dashboard.png)
+<img width="1907" height="820" alt="image" src="https://github.com/user-attachments/assets/08cd3997-a93a-4f8e-9d1f-d947906c71b3" />
 
-![Review Workspace separating readiness from human decision](docs/images/review-workspace.png)
+<img width="1747" height="867" alt="image" src="https://github.com/user-attachments/assets/614c75c4-6a87-4c97-acc0-ac0618ddbc16" />
 
-![Agent Activity and specialist responsibilities](docs/images/agent-activity.png)
+<img width="1735" height="832" alt="image" src="https://github.com/user-attachments/assets/dc80a780-b1db-4d14-868a-728a8bb85f7f" />
+
+<img width="1780" height="855" alt="image" src="https://github.com/user-attachments/assets/fc5e8359-f6bc-4ad5-8291-1239204ccfaf" />
+
+<img width="1811" height="857" alt="image" src="https://github.com/user-attachments/assets/d8a20506-421f-47fb-b723-5fac9d1fae59" />
+
+<img width="1811" height="871" alt="image" src="https://github.com/user-attachments/assets/63b1f930-7779-4361-953c-79682608d4b9" />
+
+<img width="1821" height="865" alt="image" src="https://github.com/user-attachments/assets/d73b29d6-c1f6-4212-b4b2-12adeba504e6" />
 
 ## How the agents coordinate
 
