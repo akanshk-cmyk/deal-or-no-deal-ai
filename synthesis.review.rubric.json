@@ -1,0 +1,22 @@
+{
+  "version": "E-P01-CONDITIONAL-RUBRIC-1.0",
+  "evidence_type": "EDUCATIONAL_FIXTURE_NOT_LIVE_QUALITY",
+  "wire_content_digest": "44e07cc73e4036f31abe5850b28e32518254887846249078e33b1402195b3ab1",
+  "narrative_text_digests": {
+    "observations[0].text": "dcc497290b3f48a06afe7b8b3e57a8425f87dfb1d6704691c4470a9e48745502",
+    "observations[1].text": "151cb7210cb1de20988990221371f39f51f3f83a1f176eea20426effcaa9f283",
+    "observations[2].text": "eafd94c8d8bd2204645215d14d62f689d259d921a357e4e7304eba6951d803b9",
+    "panel_decision.rationale": "d9477b10a05b7cb698a53364f085acd569e31b2fe1f790d8701718bff6cabdd7",
+    "panel_decision.conditions[0]": "7938ef4e56f6d7324cad8cc5e810cb0333c479d9281bef8a0ac5845c30c6c9c8"
+  },
+  "expected": {
+    "dscr": "1.15",
+    "score": "33",
+    "band": "MODERATE",
+    "decision": "Conditional Approve"
+  },
+  "limitations": [
+    "Registered source covenant, not a DSCR remedy",
+    "All specialist and final review gates required; condition remains outstanding"
+  ]
+}

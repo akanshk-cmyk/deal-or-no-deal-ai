@@ -1,0 +1,54 @@
+{
+  "scenario_id": "E-P01",
+  "package_digest": "4eb10dac6b661ecc00c6c3e61bdf01764d05819ccf18938cdef51c2df71bbc3f",
+  "sources": [
+    {
+      "source_id": "E-P01-AGREEMENT-1",
+      "version": "CORE-SOURCE-1.0",
+      "path": "agreement.pdf",
+      "content_digest": "10191d3236f0d4dee774a7665fcc122fe85ad0901a391b4c186121b64154084d",
+      "page_count": 1,
+      "byte_count": 2188
+    },
+    {
+      "source_id": "E-P01-FINANCIALS-1",
+      "version": "CORE-SOURCE-1.0",
+      "path": "financials.pdf",
+      "content_digest": "538572220f1e60bd892031ed37c55468dcdb1b1ceeec48fb86c7626b1dce1584",
+      "page_count": 2,
+      "byte_count": 4119
+    },
+    {
+      "source_id": "E-P01-COLLATERAL-1",
+      "version": "CORE-SOURCE-1.0",
+      "path": "collateral-and-assessments.pdf",
+      "content_digest": "bb69fdbcfcf672de151312fefcab202f691f4d0987cd0b2f676fff531fcdf494",
+      "page_count": 2,
+      "byte_count": 3777
+    }
+  ],
+  "page_handles": {
+    "E-P01:AGREEMENT-P1": {
+      "source_id": "E-P01-AGREEMENT-1",
+      "page": 1
+    },
+    "E-P01:FIN-P1": {
+      "source_id": "E-P01-FINANCIALS-1",
+      "page": 1
+    },
+    "E-P01:FIN-P2": {
+      "source_id": "E-P01-FINANCIALS-1",
+      "page": 2
+    },
+    "E-P01:COLLATERAL-P1": {
+      "source_id": "E-P01-COLLATERAL-1",
+      "page": 1
+    },
+    "E-P01:ASSESSMENT-P2": {
+      "source_id": "E-P01-COLLATERAL-1",
+      "page": 2
+    }
+  },
+  "page_count": 5,
+  "byte_count": 10084
+}
