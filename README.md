@@ -74,51 +74,6 @@ LangGraph acts as the **Orchestrator Agent**: it passes structured, source-linke
 | Synthesizer Agent ? Nebius | Combines joined findings into a rationale, outstanding concerns, conditions and next actions. |
 | Readiness and reporting | After narrative verification, deterministic checks set decision readiness. Permitted reports preserve findings and evidence; human decisions are recorded separately. |
 
-### Parallel analysis, coordinated handoffs
-
-The diagram shows the **general-upload path**. Financial, Compliance and Risk receive the same verified input snapshot and execute in parallel. LangGraph joins all three outputs before synthesis. Sample drafts and historical reviews retain their own checkpoint policies; unverified drafts are labeled.
-
-```text
-Upload deal documents
-        |
-        v
-Parse PDFs and retain page references
-        |
-        v
-Extraction Agent reads terms, figures and supporting sources
-        |
-        v
-Human reviewer checks extracted facts and reporting periods
-        |
-        v
-Orchestrator sends the same verified information to three specialists
-        |
-        +-- Financial Specialist: calculate financial ratios --+
-        |                                                     |
-        +-- Compliance Specialist: check applicable policies --+  Run in parallel
-        |                                                     |
-        +-- Risk Specialist: identify risk factors and flags --+
-                                                              |
-                                                              v
-Orchestrator combines all three specialist results
-        |
-        v
-Synthesizer Agent explains findings, concerns and next actions
-        |
-        v
-Human reviewer checks the explanation against source evidence
-        |
-        v
-Readiness Gate identifies unresolved requirements
-        |
-        +--> Credit Memo: permitted report with findings and sources
-        |
-        +--> Separate Human Decision: approve, reject or request information
-             Only when the user's role and required checks permit the action
-```
-
-One Deal ID and source map connect results across screens. SQLite retains checkpoints and review history so permitted continuation uses the recorded state. Viewing a page starts no AI analysis. A memo can be generated while approval remains blocked.
-
 ## How Deal or No Deal AI Works
 
 **From deal documents to an evidence-backed credit review — with specialized agents working together and humans remaining in control.**
@@ -264,6 +219,11 @@ An AI recommendation is not automatically a human approval.
 </details>
 
 ---
+### Parallel analysis, coordinated handoffs
+
+The diagram shows the **general-upload path**. Financial, Compliance and Risk receive the same verified input snapshot and execute in parallel. LangGraph joins all three outputs before synthesis. Sample drafts and historical reviews retain their own checkpoint policies; unverified drafts are labeled.
+
+One Deal ID and source map connect results across screens. SQLite retains checkpoints and review history so permitted continuation uses the recorded state. Viewing a page starts no AI analysis. A memo can be generated while approval remains blocked.
 
 ### Why This Workflow Matters
 
