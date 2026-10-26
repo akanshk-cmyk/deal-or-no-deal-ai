@@ -305,14 +305,6 @@ Saved-answer evaluations and mocked tests are separate from live-model evidence.
 
 Scanned/encrypted PDFs, real banking integrations, production authentication and calibrated credit predictions are outside scope. A project license has not been selected.
 
-## Next milestones and submission
-
-Priorities are the fresh upload walkthrough, broader live-answer evaluation and improved retrieval validation. Additional formats, configurable institutional policies and enterprise security are future enhancements.
-
-[GitHub repository](https://github.com/akanshk-cmyk/deal-or-no-deal-ai) Â· [Project report](docs/weekly-project-report_submission.pdf) Â· [Architecture](docs/architecture/hld.md) Â· [Synthetic documents](demo-documents/cedar-vale-packaging/README.md)
-
-**Demo recording:** pending. **Public application:** not deployed.
-
 **Deal or No Deal AI helps explain the evidence, calculations, risks and unresolved questions behind a recommendation.**
 
 *Educational use only. All demonstration deals are fictional and roles simulated. AI recommendations and demo decisions do not authorize real loans.*
