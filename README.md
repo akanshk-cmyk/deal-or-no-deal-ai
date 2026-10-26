@@ -1,121 +1,174 @@
-﻿# Deal or No Deal AI
+# Deal or No Deal AI
 
-*Every deal has a story. Our agents find the plot holes.*
+### Every deal has a story. Our agents find the plot holes.
 
-**A multi-agent financial deal review assistant built with LangGraph.** Upload a fictional commercial-loan package, inspect financial and policy findings, and prepare a source-linked credit memo. Reviewers can see what the documents support and what still needs attention.
+**Understand the deal. Check the numbers. See what still needs attention.**
 
-**Project - Mastering Agentic AI · Week 3**
+A loan can look attractive on paper and still be unready for approval. Deal or No Deal AI brings document extraction, financial analysis, policy checks and human review into one connected experienceâ€”so reviewers can understand the evidence behind a recommendation.
 
-## Why it exists
+Built for **Project 3B: Multi-Agent Deal Review Pipeline**, this educational application uses fictional commercial loans and simulated roles. It supports human judgment; it does not authorize real lending.
 
-Commercial-loan reviews combine agreements, financial statements, collateral evidence and lending policies. Analysts must reconcile dates, calculate ratios, identify exceptions and explain their conclusions. Scattered documents make unsupported assumptions difficult to spot.
+[Explore the architecture](docs/architecture/hld.md) Â· [Read the project report](docs/weekly-project-report_submission.pdf) Â· [Try the synthetic upload package](demo-documents/cedar-vale-packaging/README.md)
 
-Deal or No Deal AI connects these activities in one workspace. AI extracts information and explains findings; Python performs reproducible calculations and configured policy checks. Reviewers inspect evidence and record separate human decisions. The goal is less repetitive preparation with clear accountability; productivity gains have not been measured.
+## Why we built it
 
-## The working experience
+A credit analyst receives a loan agreement, financial statements and collateral documents. The borrower looks promisingâ€”but do the figures cover the same period? Is the collateral sufficient? Does a reporting covenant still need review?
 
-1. **Upload and inspect:** In New Deal, choose a sample or upload one synthetic package: up to three text PDFs, ten combined pages and 10 MB (10,000,000 bytes). Validate the files and confirm suggested reporting information.
-2. **Run AI Deal Review:** Explicitly start live extraction of structured terms and citations from retained documents.
-3. **Verify facts:** For new general uploads, permitted reviewers inspect facts and reporting basis before continuing.
-4. **Analyze and synthesize:** Financial, Compliance and Risk branches analyze the same verified inputs, join, then feed AI synthesis.
-5. **Verify conclusions:** Review narrative evidence. The readiness gate identifies unresolved requirements and permitted next actions.
-6. **Use the results:** Inspect activity, download a permitted partial or complete memo, and record authorized simulated decisions.
+Reviewers must connect evidence, calculate ratios and explain unresolved concerns. One confident AI response can hide unsupported assumptions.
 
-One Deal ID links documents, results, memo and history. Preliminary upload calculations are explicitly unverified; their display does not mean specialist execution or human verification has completed.
+## One connected review experience
 
-### Six connected screens
+| Traditional review | Deal or No Deal AI |
+|---|---|
+| Read documents and copy important figures | Extract structured terms with source references |
+| Calculate ratios in a separate worksheet | Apply reproducible Python calculations |
+| Reconcile policy requirements manually | Surface configured policy findings and unknowns |
+| Assemble a written credit review | Combine findings into a source-linked draft memo |
+| Track review actions across files | Keep comments, decisions and timestamps together |
 
-- **Deal Dashboard:** Prioritize deals needing attention.
-- **New Deal:** Upload, inspect and start analysis.
-- **Review Workspace:** Explore terms, calculations, policy findings, risks and sources.
-- **Agent Activity:** Inspect recorded execution and handoffs.
-- **Credit Memo:** Read and download the report.
-- **Decision History:** Inspect decisions, comments and audit events.
+## From documents to a reviewable recommendation
 
-These actual captures show retained fictional reviews, not a newly executed upload journey. Counts reflect local demonstration history.
+1. **Start in New Deal.** Select a sample or upload one fictional package: up to three text PDFs, ten combined pages and 10 MB. Inspect parsed pages and confirm suggested reporting information.
+2. **Run AI Deal Review.** Explicitly start live extraction of borrower details, terms, figures and source references.
+3. **Check the facts.** New general uploads pause for permitted reviewers to verify facts and reporting basis.
+4. **Inspect the analysis.** Financial, Compliance and Risk specialists run in parallel on verified inputs, then join before synthesis.
+5. **Review the explanation.** Verify the generated narrative against its evidence. The readiness gate identifies unresolved requirements.
+6. **Use the findings.** Download a permitted partial or complete memo and record authorized simulated review actions.
 
-<img width="1907" height="820" alt="image" src="https://github.com/user-attachments/assets/08cd3997-a93a-4f8e-9d1f-d947906c71b3" />
+One Deal ID connects the documents and downstream screens. Preliminary upload calculations are labeled unverified; viewing them does not complete a graph stage or a human checkpoint.
 
-<img width="1747" height="867" alt="image" src="https://github.com/user-attachments/assets/614c75c4-6a87-4c97-acc0-ac0618ddbc16" />
+### See the application
 
-<img width="1735" height="832" alt="image" src="https://github.com/user-attachments/assets/dc80a780-b1db-4d14-868a-728a8bb85f7f" />
+**Deal Dashboard â€” what needs attention next?** View the deal queue, status and recorded findings.
 
-<img width="1780" height="855" alt="image" src="https://github.com/user-attachments/assets/fc5e8359-f6bc-4ad5-8291-1239204ccfaf" />
+![Deal Dashboard showing the attention queue](docs/images/dashboard.png)
 
-<img width="1811" height="857" alt="image" src="https://github.com/user-attachments/assets/d8a20506-421f-47fb-b723-5fac9d1fae59" />
+**Review Workspace â€” why does this deal need review?** Explore extracted terms, financial analysis, compliance, risks and supporting pages.
 
-<img width="1811" height="871" alt="image" src="https://github.com/user-attachments/assets/63b1f930-7779-4361-953c-79682608d4b9" />
+![Review Workspace showing Low risk and Pending Review readiness](docs/images/review-workspace.png)
 
-<img width="1821" height="865" alt="image" src="https://github.com/user-attachments/assets/d73b29d6-c1f6-4212-b4b2-12adeba504e6" />
+**Agent Activity â€” how was the review produced?** Inspect specialist responsibilities, recorded execution and handoffs.
 
-## How the agents coordinate
+![Agent Activity showing the specialist team](docs/images/agent-activity.png)
 
-This diagram shows the **new general-upload workflow**. LangGraph coordinates typed shared state, conditional routing, persisted checkpoints and explicit continuation. Components communicate through source-linked artifacts, not simulated conversations.
+The other screens are **New Deal**, **Credit Memo** and **Decision History**. Together, they support intake, downloadable reporting and recorded human actions. Screenshots show retained fictional reviews, not proof of a fresh general-upload walkthrough.
 
-```mermaid
-flowchart TD
-    A[Upload and validate PDFs] --> B[Extraction Agent: Nebius]
-    B --> C[Human fact and reporting-basis verification]
-    C --> D[Financial Specialist: Python]
-    C --> E[Compliance Specialist: Python]
-    C --> F[Risk Specialist: Python]
-    D --> G[Join specialist results]
-    E --> G
-    F --> G
-    G --> H[Synthesizer Agent: Nebius]
-    H --> I[Human narrative verification]
-    I --> J[Deterministic readiness gate]
-    J --> K[Permitted memo and separate human decision]
+## Multi-agent flow: how data becomes analysis
+
+LangGraph acts as the **Orchestrator Agent**: it passes structured, source-linked information between specialists, records progress and pauses when human checks are required. The workflow has two normal LLM stages and three deterministic Python specialist nodes.
+
+| Stage | Data processing and reviewer value |
+|---|---|
+| Document intake | Parses PDF text, retains page references and checks upload limits. Parsing does not verify financial facts. |
+| Extraction Agent ? Nebius | Turns document text into structured borrower details, loan terms and financial inputs with citations. Pydantic checks the output structure, not factual truth. |
+| Human fact verification | Reviewers compare values, units, reporting periods and applicability with the cited pages. AI-assisted checks never count as human verification. |
+| Financial Specialist ? Python | Applies reproducible formulas to supported inputs: debt coverage, collateral coverage and leverage. Missing operands remain unresolved. |
+| Compliance Specialist ? Python | Applies configured sample-policy rules; unknown applicability and incomplete covenant checks remain visible. |
+| Risk Specialist ? Python | Aggregates available risk factors and flags. Missing factor assessments produce Insufficient Data, not an assumed Low score. |
+| Synthesizer Agent ? Nebius | Combines joined findings into a rationale, outstanding concerns, conditions and next actions. |
+| Readiness and reporting | After narrative verification, deterministic checks set decision readiness. Permitted reports preserve findings and evidence; human decisions are recorded separately. |
+
+### Parallel analysis, coordinated handoffs
+
+The diagram shows the **general-upload path**. Financial, Compliance and Risk receive the same verified input snapshot and execute in parallel. LangGraph joins all three outputs before synthesis. Sample drafts and historical reviews retain their own checkpoint policies; unverified drafts are labeled.
+
+```text
+Upload deal documents
+        |
+        v
+Parse PDFs and retain page references
+        |
+        v
+Extraction Agent reads terms, figures and supporting sources
+        |
+        v
+Human reviewer checks extracted facts and reporting periods
+        |
+        v
+Orchestrator sends the same verified information to three specialists
+        |
+        +-- Financial Specialist: calculate financial ratios --+
+        |                                                     |
+        +-- Compliance Specialist: check applicable policies --+  Run in parallel
+        |                                                     |
+        +-- Risk Specialist: identify risk factors and flags --+
+                                                              |
+                                                              v
+Orchestrator combines all three specialist results
+        |
+        v
+Synthesizer Agent explains findings, concerns and next actions
+        |
+        v
+Human reviewer checks the explanation against source evidence
+        |
+        v
+Readiness Gate identifies unresolved requirements
+        |
+        +--> Credit Memo: permitted report with findings and sources
+        |
+        +--> Separate Human Decision: approve, reject or request information
+             Only when the user's role and required checks permit the action
 ```
 
-The **Extraction Agent** identifies terms, figures and citations. The **Financial Specialist** calculates metrics; **Compliance** evaluates sample policies; **Risk** aggregates flags and available factor assessments. The **Synthesizer Agent** explains the combined findings. The **LangGraph Orchestrator** manages dependencies and checkpoints without a planning-model call.
+One Deal ID and source map connect results across screens. SQLite retains checkpoints and review history so permitted continuation uses the recorded state. Viewing a page starts no AI analysis. A memo can be generated while approval remains blocked.
 
-This hybrid design has **two normal LLM stages and three deterministic specialist nodes**. Calculations and rules benefit from explicit, testable behavior. The branches join through `specialist_join` before synthesis; only the parent persists their outputs. Sample demo drafts and historical reviews retain their own execution policies; unverified drafts are labeled.
+### How recommendations support a decision
 
-## Illustrative deal: low risk, still pending
+The recommendation explains **what supports the deal, what remains unresolved and what to do next**. Reviewers trace claims to source pages, compare calculations with inputs and inspect policy findings. They can identify missing evidence, request information or escalate exceptions instead of accepting a score alone.
 
-The registered **Example Equipment LLC** case concerns a fictional **$1.2 million, 48-month equipment loan**.
+The deterministic readiness gate determines the effective outcome; an AI-generated approval proposal cannot override mandatory blockers. Authorized users separately record simulated Approve, Reject or Pending actions with required comments and timestamps, subject to backend permissions and readiness checks.
 
-| Finding | Sample result |
+## The demo story: Low Risk â†’ Pending Review â†’ Human Decision
+
+**Example Equipment LLC requests a fictional $1.2 million equipment loan over 48 months.**
+
+| Finding | Registered sample result |
 |---|---|
 | Debt-service coverage: annual cash available / annual debt payments | 1.50x |
 | Loan-to-value: loan amount / collateral value | 60% |
 | Debt / EBITDA: debt relative to operating earnings | 3.00x |
-| Illustrative risk assessment | 21/100 — Low |
-| Effective readiness | **Pending Review** |
-| Human credit decision | **Not recorded** |
+| Illustrative risk score | 21/100 â€” Low |
+| Approval readiness | **Pending Review** |
+| Human decision | **Not recorded** |
 
-The annual financial-reporting covenant remains unevaluated. Favorable ratios and a Low score cannot clear that requirement. Future obligations are evaluated according to timing, not automatically treated as breaches.
+The annual financial-reporting covenant still needs evaluation. Favorable ratios and a Low rating cannot clear it. Future obligations are evaluated according to contractual timing, not automatically marked breached.
 
-The score uses supplied educational assessments, not a default-probability model. Other uploads never inherit it: absent assessments yield **Insufficient Data**. AI proposals, readiness and human decisions stay separate. Any permitted educational approval override is labeled and audited; it does not resolve outstanding checks.
+**A financially attractive deal is not necessarily ready for approval.**
 
-## Technology
+The sample score depends on supplied educational factor assessments, not a calibrated default-probability model. New uploads never inherit those ratings. Any permitted educational approval override is explicitly labeled and audited; outstanding checks remain unchanged.
 
-Python 3.12 powers the application; Streamlit provides the interface. LangGraph and LangChain Core support orchestration, Pydantic validates structured data, pypdf parses PDFs, and SQLite persists reviews and checkpoints. pytest supports automated verification.
+## What makes this project stand out?
 
-Nebius generation uses `Qwen/Qwen3-30B-A3B-Instruct-2507`. Runtime grounding uses supplied cited documents; hosted embeddings are a separate selection, not a completed semantic-search benchmark.
+**Specialized responsibilities, reproducible calculations, visible evidence and separate human accountability.** Reviewers see both the findings and how the system reached them.
 
-## Getting started
+## Technology, simply explained
 
-Install Python 3.12 and [uv](https://docs.astral.sh/uv/). Replace both repository placeholders:
+Streamlit provides the interface; LangGraph and LangChain Core support orchestration. Python 3.12 handles calculations and rules, Pydantic validates structured outputs, pypdf extracts PDF text, SQLite stores local reviews and checkpoints, and pytest supports verification.
+
+Nebius uses `Qwen/Qwen3-30B-A3B-Instruct-2507` for extraction and synthesis. Runtime grounding uses supplied cited documents; a completed semantic-retrieval benchmark is not claimed.
+
+## Run locally
+
+Install Python 3.12 and [uv](https://docs.astral.sh/uv/). From PowerShell:
 
 ```powershell
-git clone <YOUR_GITHUB_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_FOLDER>
+git clone https://github.com/akanshk-cmyk/deal-or-no-deal-ai.git
+cd deal-or-no-deal-ai
 uv sync --frozen --python 3.12 --group dev --extra evaluation
 Copy-Item .env.example .env
 ```
 
-The evaluation extra includes tokenizer support for live request sizing; installation does not run evaluations. Populate `NEBIUS_API_KEY` in local `.env`. Never commit it. For live sizing, explicitly download tokenizer files only, then launch:
+Populate `NEBIUS_API_KEY` in local `.env`; never commit it. The evaluation extra supplies tokenizer support for live sizing; installation does not run evaluations. Explicitly download tokenizer files only, then start Streamlit:
 
 ```powershell
 uv run --frozen --extra evaluation python tools/setup_live_tokenizer.py
 uv run --frozen --extra evaluation streamlit run app.py --server.address 127.0.0.1
 ```
 
-Open the displayed URL. Check **Live AI demo: setup and readiness** in the sidebar before explicit Run or Continue. A key alone does not establish provider access, request fit or spending readiness. Ignored runtime evidence is not included in a fresh checkout.
+Check **Live AI demo: setup and readiness** in the sidebar. A key alone does not establish request fit, provider access or spending readiness. Fresh clones do not inherit ignored runtime evidence or completed reviews.
 
-`config/app.toml` currently selects `LIVE`; `FIXTURE` selects saved sample responses without model calls. One Run action serves both paths. Live calls incur charges within the shared allowance. Navigation starts no model call; failures never substitute saved answers.
+`config/app.toml` currently selects `LIVE`; `FIXTURE` uses saved sample answers without model calls. One Run action serves both. Live calls incur charges within the shared allowance; navigation starts no model call, and failures never substitute saved answers.
 
 Run offline application tests:
 
@@ -123,14 +176,22 @@ Run offline application tests:
 uv run --frozen --extra evaluation pytest
 ```
 
-## Evidence and next steps
+## Evidence and boundaries
 
-[Phase 1 evidence](docs/evaluation/phase1-demo-results.md) documents completed live Standard Deal extraction, synthesis and a downloadable draft, plus **67 functional tests and 63 subtests** at that checkpoint. These historical checks are not a current full-suite count or accuracy guarantee.
+[Recorded Phase 1 results](docs/evaluation/phase1-demo-results.md) document live Standard Deal extraction, synthesis and draft-memo generation, with **67 functional tests and 63 subtests** at that checkpoint. Historical results do not establish current full-suite success or general accuracy.
 
-Saved-answer/RAGAS experiments and mocked integration tests are separate from live-model evidence. The newest general-upload workflow still needs a complete fresh live walkthrough with genuine human checkpoints. Broader live-answer evaluation remains deferred.
+Saved-answer evaluations and mocked tests are separate from live-model evidence. The newest general-upload path still needs a complete fresh live walkthrough with genuine human checkpoints. AI-assisted evidence checks do not count as human verification.
 
-Scanned/encrypted PDFs, production authentication, real banking integrations and calibrated credit predictions are outside scope. See the [report](docs/weekly-project-report.md), [upload contract](docs/specs/general-upload-acceptance.md) and [publication checklist](docs/github-publication-checklist.md) for details.
+Scanned/encrypted PDFs, real banking integrations, production authentication and calibrated credit predictions are outside scope. A project license has not been selected.
 
-**Submission links:** GitHub repository — pending; demo recording — pending. No public deployment is claimed. A project license remains unselected.
+## Next milestones and submission
 
-**Educational use only:** Deals are fictional and roles simulated. AI recommendations and demo decisions do not authorize real loans.
+Priorities are the fresh upload walkthrough, broader live-answer evaluation and improved retrieval validation. Additional formats, configurable institutional policies and enterprise security are future enhancements.
+
+[GitHub repository](https://github.com/akanshk-cmyk/deal-or-no-deal-ai) Â· [Project report](docs/weekly-project-report_submission.pdf) Â· [Architecture](docs/architecture/hld.md) Â· [Synthetic documents](demo-documents/cedar-vale-packaging/README.md)
+
+**Demo recording:** pending. **Public application:** not deployed.
+
+**Deal or No Deal AI helps explain the evidence, calculations, risks and unresolved questions behind a recommendation.**
+
+*Educational use only. All demonstration deals are fictional and roles simulated. AI recommendations and demo decisions do not authorize real loans.*
