@@ -240,7 +240,7 @@ The recommendation explains **what supports the deal, what remains unresolved an
 
 The deterministic readiness gate determines the effective outcome; an AI-generated approval proposal cannot override mandatory blockers. Authorized users separately record simulated Approve, Reject or Pending actions with required comments and timestamps, subject to backend permissions and readiness checks.
 
-## The demo story: Low Risk â†’ Pending Review â†’ Human Decision
+## The demo story: Low Risk † Pending Review † Human Decision
 
 **Example Equipment LLC requests a fictional $1.2 million equipment loan over 48 months.**
 
@@ -249,7 +249,7 @@ The deterministic readiness gate determines the effective outcome; an AI-generat
 | Debt-service coverage: annual cash available / annual debt payments | 1.50x |
 | Loan-to-value: loan amount / collateral value | 60% |
 | Debt / EBITDA: debt relative to operating earnings | 3.00x |
-| Illustrative risk score | 21/100 â€” Low |
+| Illustrative risk score | 21/100 - Low |
 | Approval readiness | **Pending Review** |
 | Human decision | **Not recorded** |
 
