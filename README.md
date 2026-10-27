@@ -6,9 +6,7 @@
 
 A loan can look attractive on paper and still be unready for approval. Deal or No Deal AI brings document extraction, financial analysis, policy checks and human review into one connected experienceâ€”so reviewers can understand the evidence behind a recommendation.
 
-Built for **Project 3B: Multi-Agent Deal Review Pipeline**, this educational application uses fictional commercial loans and simulated roles. It supports human judgment; it does not authorize real lending.
-
-[Explore the architecture](docs/architecture/hld.md) Â· [Read the project report](docs/weekly-project-report_submission.pdf) Â· [Try the synthetic upload package](demo-documents/cedar-vale-packaging/README.md)
+Built for **Week 3 Project: Multi-Agent Deal Review Pipeline**, this educational application uses fictional commercial loans and simulated roles. It supports human judgment; it does not authorize real lending.
 
 ## Why we built it
 
