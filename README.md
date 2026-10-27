@@ -1,4 +1,4 @@
-# Deal or No Deal AI
+# Deal or No Deal AI - Multi-Agent Deal Review Pipeline
 
 ### Every deal has a story. Our agents find the plot holes.
 
